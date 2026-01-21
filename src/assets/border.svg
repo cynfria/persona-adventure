@@ -1,41 +1,49 @@
 <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <!-- Top edge - main line -->
-  <path d="M 15 28 Q 30 22 45 26 Q 62 31 78 24 Q 95 19 112 27 Q 128 33 145 25 Q 162 20 180 29 Q 198 35 215 27 Q 233 21 251 30 Q 269 36 287 28 Q 305 22 323 31 Q 341 37 359 29 Q 377 23 395 32 Q 413 38 431 30 Q 449 24 467 33 Q 485 39 503 31 Q 521 25 539 34 Q 557 40 575 32 Q 593 26 611 35 Q 629 41 647 33 Q 665 27 683 36 Q 701 42 719 34 Q 737 28 755 37 Q 773 43 791 35 Q 809 29 827 38 Q 845 44 863 36 Q 881 30 899 39 Q 917 45 935 37 Q 953 31 971 40 L 985 35"
-        stroke="black" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top edge - main line with breaks -->
+  <path d="M 15 25 L 127 25 M 134 26 L 298 24 M 305 25 L 456 25 M 463 24 L 621 26 M 628 25 L 789 25 M 796 24 L 985 25"
+        stroke="black" stroke-width="13" fill="none" stroke-linecap="round"/>
 
-  <!-- Top edge - overlapping sketchy lines -->
-  <path d="M 18 26 Q 35 21 52 25 Q 70 30 88 23 Q 106 18 124 26 Q 142 32 160 24 Q 178 19 196 27 Q 214 33 232 25 Q 250 20 268 28 Q 286 34 304 26 Q 322 21 340 29 Q 358 35 376 27 Q 394 22 412 30 Q 430 36 448 28 Q 466 23 484 31 Q 502 37 520 29 Q 538 24 556 32 Q 574 38 592 30 Q 610 25 628 33 Q 646 39 664 31 Q 682 26 700 34 Q 718 40 736 32 Q 754 27 772 35 Q 790 41 808 33 Q 826 28 844 36 Q 862 42 880 34 Q 898 29 916 37 Q 934 43 952 35 Q 970 30 982 38"
-        stroke="black" stroke-width="9" fill="none" opacity="0.5" stroke-linecap="round"/>
-  <path d="M 12 30 Q 28 24 44 28 Q 61 33 79 26 Q 97 21 115 29 Q 133 35 151 27 Q 169 22 187 31 Q 205 37 223 29 Q 241 23 259 32 Q 277 38 295 30 Q 313 24 331 33 Q 349 39 367 31 Q 385 25 403 34 Q 421 40 439 32 Q 457 26 475 35 Q 493 41 511 33 Q 529 27 547 36 Q 565 42 583 34 Q 601 28 619 37 Q 637 43 655 35 Q 673 29 691 38 Q 709 44 727 36 Q 745 30 763 39 Q 781 45 799 37 Q 817 31 835 40 Q 853 46 871 38 Q 889 32 907 41 Q 925 47 943 39 Q 961 33 979 42"
-        stroke="black" stroke-width="6" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <!-- Top edge - sketchy overlapping lines -->
+  <path d="M 12 27 L 143 28 M 149 27 L 312 26 M 318 28 L 472 27 M 479 26 L 598 28 M 605 27 L 776 27 M 782 28 L 988 27"
+        stroke="black" stroke-width="9" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 18 23 L 89 24 M 96 23 L 234 22 M 241 24 L 401 23 M 408 22 L 556 24 M 563 23 L 712 23 M 719 24 L 876 22 M 883 23 L 982 23"
+        stroke="black" stroke-width="7" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 10 26 L 176 25 M 183 26 L 367 26 M 374 25 L 523 26 M 530 25 L 689 26 M 696 25 L 843 26 M 850 25 L 990 26"
+        stroke="black" stroke-width="5" fill="none" opacity="0.3" stroke-linecap="round"/>
 
-  <!-- Right edge - main line -->
-  <path d="M 980 35 Q 976 53 982 71 Q 978 89 983 107 Q 979 125 984 143 Q 980 161 985 179 Q 981 197 986 215 Q 982 233 987 251 Q 983 269 988 287 Q 984 305 989 323 Q 985 341 990 359 Q 986 377 991 395 Q 987 413 992 431 Q 988 449 993 467 Q 989 485 994 503 Q 990 521 995 539 Q 991 557 996 575 Q 992 593 997 611 Q 993 629 998 647 Q 994 665 999 683 Q 995 701 1000 719 Q 996 737 1001 755 Q 997 773 1002 791 Q 998 809 1003 827 Q 999 845 1004 863 Q 1000 881 1005 899 Q 1001 917 1006 935 Q 1002 953 1007 971"
-        stroke="black" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right edge - main line with breaks -->
+  <path d="M 975 20 L 975 143 M 976 150 L 974 289 M 975 296 L 975 447 M 976 454 L 974 612 M 975 619 L 975 768 M 976 775 L 975 980"
+        stroke="black" stroke-width="13" fill="none" stroke-linecap="round"/>
 
-  <!-- Right edge - overlapping sketchy lines -->
-  <path d="M 978 38 Q 974 56 980 74 Q 976 92 981 110 Q 977 128 982 146 Q 978 164 983 182 Q 979 200 984 218 Q 980 236 985 254 Q 981 272 986 290 Q 982 308 987 326 Q 983 344 988 362 Q 984 380 989 398 Q 985 416 990 434 Q 986 452 991 470 Q 987 488 992 506 Q 988 524 993 542 Q 989 560 994 578 Q 990 596 995 614 Q 991 632 996 650 Q 992 668 997 686 Q 993 704 998 722 Q 994 740 999 758 Q 995 776 1000 794 Q 996 812 1001 830 Q 997 848 1002 866 Q 998 884 1003 902 Q 999 920 1004 938 Q 1000 956 1005 974"
-        stroke="black" stroke-width="9" fill="none" opacity="0.5" stroke-linecap="round"/>
-  <path d="M 982 32 Q 978 50 984 68 Q 980 86 985 104 Q 981 122 986 140 Q 982 158 987 176 Q 983 194 988 212 Q 984 230 989 248 Q 985 266 990 284 Q 986 302 991 320 Q 987 338 992 356 Q 988 374 993 392 Q 989 410 994 428 Q 990 446 995 464 Q 991 482 996 500 Q 992 518 997 536 Q 993 554 998 572 Q 994 590 999 608 Q 995 626 1000 644 Q 996 662 1001 680 Q 997 698 1002 716 Q 998 734 1003 752 Q 999 770 1004 788 Q 1000 806 1005 824 Q 1001 842 1006 860 Q 1002 878 1007 896 Q 1003 914 1008 932 Q 1004 950 1009 968"
-        stroke="black" stroke-width="6" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <!-- Right edge - sketchy overlapping lines -->
+  <path d="M 973 18 L 973 156 M 972 163 L 973 317 M 972 324 L 973 465 M 972 472 L 973 634 M 972 641 L 973 801 M 972 808 L 973 982"
+        stroke="black" stroke-width="9" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 977 22 L 977 98 M 978 105 L 977 245 M 978 252 L 977 389 M 978 396 L 977 567 M 978 574 L 977 723 M 978 730 L 977 887 M 978 894 L 977 978"
+        stroke="black" stroke-width="7" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 974 15 L 974 189 M 975 196 L 974 356 M 975 363 L 974 534 M 975 541 L 974 678 M 975 685 L 974 834 M 975 841 L 974 985"
+        stroke="black" stroke-width="5" fill="none" opacity="0.3" stroke-linecap="round"/>
 
-  <!-- Bottom edge - main line -->
-  <path d="M 985 970 Q 967 975 949 969 Q 931 974 913 968 Q 895 973 877 967 Q 859 972 841 966 Q 823 971 805 965 Q 787 970 769 964 Q 751 969 733 963 Q 715 968 697 962 Q 679 967 661 961 Q 643 966 625 960 Q 607 965 589 959 Q 571 964 553 958 Q 535 963 517 957 Q 499 962 481 956 Q 463 961 445 955 Q 427 960 409 954 Q 391 959 373 953 Q 355 958 337 952 Q 319 957 301 951 Q 283 956 265 950 Q 247 955 229 949 Q 211 954 193 948 Q 175 953 157 947 Q 139 952 121 946 Q 103 951 85 945 Q 67 950 49 944 Q 31 949 20 943"
-        stroke="black" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom edge - main line with breaks -->
+  <path d="M 985 975 L 812 976 M 805 975 L 643 975 M 636 976 L 487 975 M 480 976 L 321 975 M 314 974 L 178 976 M 171 975 L 15 975"
+        stroke="black" stroke-width="13" fill="none" stroke-linecap="round"/>
 
-  <!-- Bottom edge - overlapping sketchy lines -->
-  <path d="M 982 972 Q 964 977 946 971 Q 928 976 910 970 Q 892 975 874 969 Q 856 974 838 968 Q 820 973 802 967 Q 784 972 766 966 Q 748 971 730 965 Q 712 970 694 964 Q 676 969 658 963 Q 640 968 622 962 Q 604 967 586 961 Q 568 966 550 960 Q 532 965 514 959 Q 496 964 478 958 Q 460 963 442 957 Q 424 962 406 956 Q 388 961 370 955 Q 352 960 334 954 Q 316 959 298 953 Q 280 958 262 952 Q 244 957 226 951 Q 208 956 190 950 Q 172 955 154 949 Q 136 954 118 948 Q 100 953 82 947 Q 64 952 46 946 Q 28 951 15 945"
-        stroke="black" stroke-width="9" fill="none" opacity="0.5" stroke-linecap="round"/>
-  <path d="M 988 968 Q 970 973 952 967 Q 934 972 916 966 Q 898 971 880 965 Q 862 970 844 964 Q 826 969 808 963 Q 790 968 772 962 Q 754 967 736 961 Q 718 966 700 960 Q 682 965 664 959 Q 646 964 628 958 Q 610 963 592 957 Q 574 962 556 956 Q 538 961 520 955 Q 502 960 484 954 Q 466 959 448 953 Q 430 958 412 952 Q 394 957 376 951 Q 358 956 340 950 Q 322 955 304 949 Q 286 954 268 948 Q 250 953 232 947 Q 214 952 196 946 Q 178 951 160 945 Q 142 950 124 944 Q 106 949 88 943 Q 70 948 52 942 Q 34 947 18 941"
-        stroke="black" stroke-width="6" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <!-- Bottom edge - sketchy overlapping lines -->
+  <path d="M 988 973 L 834 972 M 827 973 L 689 973 M 682 972 L 523 973 M 516 972 L 367 973 M 360 972 L 198 973 M 191 972 L 12 973"
+        stroke="black" stroke-width="9" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 982 977 L 901 978 M 894 977 L 756 977 M 749 978 L 612 977 M 605 978 L 445 977 M 438 978 L 289 977 M 282 978 L 134 977 M 127 978 L 18 977"
+        stroke="black" stroke-width="7" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 990 974 L 823 975 M 816 974 L 667 974 M 660 975 L 498 974 M 491 975 L 356 974 M 349 975 L 201 974 M 194 975 L 10 974"
+        stroke="black" stroke-width="5" fill="none" opacity="0.3" stroke-linecap="round"/>
 
-  <!-- Left edge - main line -->
-  <path d="M 20 968 Q 16 950 22 932 Q 18 914 24 896 Q 20 878 26 860 Q 22 842 28 824 Q 24 806 30 788 Q 26 770 32 752 Q 28 734 34 716 Q 30 698 36 680 Q 32 662 38 644 Q 34 626 40 608 Q 36 590 42 572 Q 38 554 44 536 Q 40 518 46 500 Q 42 482 48 464 Q 44 446 50 428 Q 46 410 52 392 Q 48 374 54 356 Q 50 338 56 320 Q 52 302 58 284 Q 54 266 60 248 Q 56 230 62 212 Q 58 194 64 176 Q 60 158 66 140 Q 62 122 68 104 Q 64 86 70 68 Q 66 50 72 32 L 68 20"
-        stroke="black" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Left edge - main line with breaks -->
+  <path d="M 25 980 L 25 821 M 24 814 L 26 671 M 25 664 L 25 512 M 24 505 L 26 345 M 25 338 L 25 189 M 24 182 L 25 20"
+        stroke="black" stroke-width="13" fill="none" stroke-linecap="round"/>
 
-  <!-- Left edge - overlapping sketchy lines -->
-  <path d="M 18 970 Q 14 952 20 934 Q 16 916 22 898 Q 18 880 24 862 Q 20 844 26 826 Q 22 808 28 790 Q 24 772 30 754 Q 26 736 32 718 Q 28 700 34 682 Q 30 664 36 646 Q 32 628 38 610 Q 34 592 40 574 Q 36 556 42 538 Q 38 520 44 502 Q 40 484 46 466 Q 42 448 48 430 Q 44 412 50 394 Q 46 376 52 358 Q 48 340 54 322 Q 50 304 56 286 Q 52 268 58 250 Q 54 232 60 214 Q 56 196 62 178 Q 58 160 64 142 Q 60 124 66 106 Q 62 88 68 70 Q 64 52 70 34 L 66 18"
-        stroke="black" stroke-width="9" fill="none" opacity="0.5" stroke-linecap="round"/>
-  <path d="M 22 966 Q 18 948 24 930 Q 20 912 26 894 Q 22 876 28 858 Q 24 840 30 822 Q 26 804 32 786 Q 28 768 34 750 Q 30 732 36 714 Q 32 696 38 678 Q 34 660 40 642 Q 36 624 42 606 Q 38 588 44 570 Q 40 552 46 534 Q 42 516 48 498 Q 44 480 50 462 Q 46 444 52 426 Q 48 408 54 390 Q 50 372 56 354 Q 52 336 58 318 Q 54 300 60 282 Q 56 264 62 246 Q 58 228 64 210 Q 60 192 66 174 Q 62 156 68 138 Q 64 120 70 102 Q 66 84 72 66 Q 68 48 74 30 L 70 15"
-        stroke="black" stroke-width="6" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <!-- Left edge - sketchy overlapping lines -->
+  <path d="M 27 982 L 27 843 M 28 836 L 27 678 M 28 671 L 27 534 M 28 527 L 27 389 M 28 382 L 27 212 M 28 205 L 27 18"
+        stroke="black" stroke-width="9" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 23 978 L 23 912 M 22 905 L 23 745 M 22 738 L 23 598 M 22 591 L 23 423 M 22 416 L 23 267 M 22 260 L 23 112 M 22 105 L 23 22"
+        stroke="black" stroke-width="7" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 26 985 L 26 856 M 27 849 L 26 701 M 27 694 L 26 545 M 27 538 L 26 378 M 27 371 L 26 234 M 27 227 L 26 15"
+        stroke="black" stroke-width="5" fill="none" opacity="0.3" stroke-linecap="round"/>
 </svg>
