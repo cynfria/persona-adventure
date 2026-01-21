@@ -89,12 +89,10 @@ function Results({ persona, onRestart }) {
           className="persona-card-wrapper"
           style={{
             transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
-            transition: 'transform 0.1s ease-out',
-            backgroundImage: `url(${borderImg})`,
-            backgroundSize: '100% 100%',
-            backgroundRepeat: 'no-repeat'
+            transition: 'transform 0.1s ease-out'
           }}
         >
+          <img src={borderImg} alt="" className="persona-card-border" />
           <div
             className="persona-card"
             style={{
