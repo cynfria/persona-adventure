@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { personas } from '../gameData';
-import borderImg from '../assets/border.png';
+import borderImg from '../assets/border.svg';
 
 function Results({ persona, onRestart }) {
   const mostCompatible = personas[persona.mostCompatible.id];

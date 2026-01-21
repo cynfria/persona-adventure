@@ -1,4 +1,4 @@
-import borderImg from '../assets/border.png';
+import borderImg from '../assets/border.svg';
 
 function StartScreen({ onStart }) {
   return (

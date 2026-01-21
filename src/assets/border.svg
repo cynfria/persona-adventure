@@ -1,0 +1,25 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <!-- Top edge -->
+  <path d="M 20 25 Q 50 20 80 23 Q 120 26 160 22 Q 200 18 240 24 Q 280 28 320 23 Q 360 19 400 25 Q 440 29 480 24 Q 520 20 560 26 Q 600 30 640 25 Q 680 21 720 27 Q 760 31 800 26 Q 840 22 880 28 Q 920 32 960 27 L 980 30"
+        stroke="black" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 15 22 Q 55 18 95 21 Q 135 24 175 20 Q 215 16 255 22 Q 295 26 335 21 Q 375 17 415 23 Q 455 27 495 22 Q 535 18 575 24 Q 615 28 655 23 Q 695 19 735 25 Q 775 29 815 24 Q 855 20 895 26 Q 935 30 975 25"
+        stroke="black" stroke-width="8" fill="none" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Right edge -->
+  <path d="M 975 30 Q 978 70 974 110 Q 971 150 976 190 Q 979 230 973 270 Q 970 310 975 350 Q 978 390 972 430 Q 969 470 974 510 Q 977 550 971 590 Q 968 630 973 670 Q 976 710 970 750 Q 967 790 972 830 Q 975 870 969 910 Q 966 950 970 970"
+        stroke="black" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 978 25 Q 980 65 976 105 Q 973 145 978 185 Q 981 225 975 265 Q 972 305 977 345 Q 980 385 974 425 Q 971 465 976 505 Q 979 545 973 585 Q 970 625 975 665 Q 978 705 972 745 Q 969 785 974 825 Q 977 865 971 905 Q 968 945 972 975"
+        stroke="black" stroke-width="8" fill="none" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Bottom edge -->
+  <path d="M 970 975 Q 940 978 900 973 Q 860 969 820 974 Q 780 978 740 972 Q 700 968 660 973 Q 620 977 580 971 Q 540 967 500 972 Q 460 976 420 970 Q 380 966 340 971 Q 300 975 260 969 Q 220 965 180 970 Q 140 974 100 968 Q 60 964 30 968 L 20 970"
+        stroke="black" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 975 978 Q 935 980 895 975 Q 855 971 815 976 Q 775 980 735 974 Q 695 970 655 975 Q 615 979 575 973 Q 535 969 495 974 Q 455 978 415 972 Q 375 968 335 973 Q 295 977 255 971 Q 215 967 175 972 Q 135 976 95 970 Q 55 966 25 970"
+        stroke="black" stroke-width="8" fill="none" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Left edge -->
+  <path d="M 25 970 Q 22 930 27 890 Q 30 850 24 810 Q 21 770 26 730 Q 29 690 23 650 Q 20 610 25 570 Q 28 530 22 490 Q 19 450 24 410 Q 27 370 21 330 Q 18 290 23 250 Q 26 210 20 170 Q 17 130 22 90 Q 25 50 19 30"
+        stroke="black" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 22 975 Q 20 935 25 895 Q 28 855 22 815 Q 19 775 24 735 Q 27 695 21 655 Q 18 615 23 575 Q 26 535 20 495 Q 17 455 22 415 Q 25 375 19 335 Q 16 295 21 255 Q 24 215 18 175 Q 15 135 20 95 Q 23 55 17 25"
+        stroke="black" stroke-width="8" fill="none" opacity="0.6" stroke-linecap="round"/>
+</svg>

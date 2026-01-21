@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import borderImg from '../assets/border.png';
+import borderImg from '../assets/border.svg';
 
 function Question({ question, questionNumber, totalQuestions, onAnswer }) {
   // Shuffle choices for each question
