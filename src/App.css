@@ -157,19 +157,15 @@
 
 /* Results Screen */
 .results-screen {
-  max-width: 700px;
+  max-width: 600px;
   width: 100%;
-}
-
-.results-content {
-  animation: fadeIn 0.4s ease-in;
 }
 
 .persona-card {
   background: white;
   border: 10px solid #000;
-  padding: 40px 35px;
-  margin-bottom: 30px;
+  padding: 30px 25px;
+  margin-bottom: 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -225,9 +221,9 @@
 }
 
 .persona-name {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: #000;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -235,23 +231,32 @@
 }
 
 .persona-emoji-large {
-  font-size: 7rem;
-  margin: 20px 0 40px 0;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.persona-emoji-large img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
 }
 
 .traits-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .trait-badge {
   background: #000;
   color: white;
-  padding: 10px 20px;
-  font-size: 0.85rem;
+  padding: 8px 16px;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -261,9 +266,9 @@
 .compatibility-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 40px;
-  padding-top: 30px;
+  gap: 20px;
+  margin-top: 25px;
+  padding-top: 20px;
   border-top: 4px solid #000;
 }
 
@@ -276,21 +281,31 @@
   color: #000;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .compat-persona-name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #000;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -1px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   line-height: 1.1;
 }
 
 .compat-emoji-small {
-  font-size: 3.5rem;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.results-content {
+  animation: fadeIn 0.4s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restart-button {
@@ -305,6 +320,8 @@
   cursor: pointer;
   transition: all 0.2s;
   font-family: 'Courier New', monospace;
+  width: 100%;
+  max-width: 400px;
 }
 
 .restart-button:hover {
@@ -315,6 +332,139 @@
 .restart-button:active {
   background: #000;
   transform: translateY(0);
+}
+
+.view-all-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 20px;
+  padding: 10px;
+  transition: opacity 0.2s;
+  font-family: 'Courier New', monospace;
+}
+
+.view-all-link:hover {
+  opacity: 0.7;
+}
+
+/* All Personas View */
+.all-personas-view {
+  width: 100%;
+}
+
+.back-button {
+  background: none;
+  border: 3px solid white;
+  color: white;
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background: white;
+  color: #2a2a2a;
+}
+
+.all-personas-title {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.personas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.persona-mini-card {
+  background: white;
+  border: 6px solid #000;
+  padding: 25px 20px;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.persona-mini-card.highlighted {
+  border-color: #FFD93D;
+  box-shadow: 0 0 0 4px #FFD93D;
+  transform: scale(1.02);
+}
+
+.you-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #FFD93D;
+  color: #000;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', monospace;
+  border: 4px solid #000;
+  z-index: 10;
+}
+
+.persona-mini-emoji {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin: 0 auto 15px auto;
+}
+
+.persona-mini-name {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.persona-mini-vibe {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.persona-mini-traits {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.mini-trait {
+  background: #000;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-family: 'Courier New', monospace;
+  width: 100%;
 }
 
 /* Animations */
@@ -353,38 +503,90 @@
   }
 
   .persona-card {
-    padding: 30px 25px;
-    border-width: 8px;
+    padding: 25px 20px;
+    border-width: 6px;
   }
 
   .persona-name {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
-  .persona-emoji-large {
-    font-size: 5rem;
+  .persona-emoji-large img {
+    width: 140px;
+    height: 140px;
   }
 
   .trait-badge {
-    padding: 8px 16px;
-    font-size: 0.75rem;
+    padding: 6px 12px;
+    font-size: 0.7rem;
   }
 
   .compatibility-grid {
-    gap: 20px;
+    gap: 15px;
     border-top-width: 3px;
+    margin-top: 20px;
+    padding-top: 15px;
   }
 
   .compat-persona-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .compat-emoji-small {
-    font-size: 2.5rem;
+    width: 90px;
+    height: 90px;
   }
 
   .progress-bar {
     height: 16px;
     border-width: 3px;
+  }
+
+  .all-personas-title {
+    font-size: 1.5rem;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-width: 2px;
+  }
+
+  .personas-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .persona-mini-card {
+    border-width: 4px;
+    padding: 20px 15px;
+  }
+
+  .persona-mini-card.highlighted {
+    box-shadow: 0 0 0 3px #FFD93D;
+  }
+
+  .you-badge {
+    padding: 4px 10px;
+    font-size: 0.65rem;
+    border-width: 3px;
+  }
+
+  .persona-mini-emoji {
+    width: 120px;
+    height: 120px;
+  }
+
+  .persona-mini-name {
+    font-size: 1rem;
+  }
+
+  .persona-mini-vibe {
+    font-size: 0.8rem;
+  }
+
+  .mini-trait {
+    font-size: 0.6rem;
+    padding: 5px 10px;
   }
 }

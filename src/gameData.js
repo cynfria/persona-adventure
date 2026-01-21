@@ -1,11 +1,23 @@
+import blockImg from './assets/block.png';
+import pixelImg from './assets/pixel.png';
+import stickyImg from './assets/sticky.png';
+import wormImg from './assets/worm.png';
+import starImg from './assets/star.png';
+import snailImg from './assets/snail.png';
+import bugImg from './assets/bug.png';
+import rockImg from './assets/rock.png';
+import hornImg from './assets/horn.png';
+import blobImg from './assets/blob.png';
+
 export const personas = {
   brickie: {
     id: 'brickie',
-    name: 'The Brickie',
-    vibe: 'A sturdy, block-shaped friend who loves stacking things perfectly.',
-    traits: ['grid system enthusiast', 'loves clean layouts', 'component library curator', 'design system guardian', 'hates inconsistent spacing'],
+    name: 'Blocky',
+    vibe: 'A colorful, blocky friend who loves snapping pieces together perfectly.',
+    traits: ['modular design master', 'component builder', 'loves clean layouts', 'design system architect', 'everything must click together'],
     color: '#D2691E',
     emoji: '🧱',
+    image: blockImg,
     mostCompatible: { id: 'stickyNote', reason: 'Both appreciate structure and organization' },
     leastCompatible: { id: 'glitchGremlin', reason: 'Chaos and instability clash with your need for stability' }
   },
@@ -16,6 +28,7 @@ export const personas = {
     traits: ['color palette perfectionist', 'gradient master', 'font pairing expert', 'dribbble browser', 'allergic to Comic Sans'],
     color: '#FFB6D9',
     emoji: '☁️',
+    image: pixelImg,
     mostCompatible: { id: 'sparkleChaser', reason: 'Both appreciate beauty and sparkly things' },
     leastCompatible: { id: 'glitchGremlin', reason: 'Their chaos destroys your carefully crafted aesthetics' }
   },
@@ -26,6 +39,7 @@ export const personas = {
     traits: ['kanban board addict', 'task master', 'documentation lover', 'Notion power user', 'reminder champion'],
     color: '#FFE66D',
     emoji: '📝',
+    image: stickyImg,
     mostCompatible: { id: 'brickie', reason: 'Your organization helps them build perfectly' },
     leastCompatible: { id: 'glitchGremlin', reason: 'They ignore all your careful reminders and break everything' }
   },
@@ -36,6 +50,7 @@ export const personas = {
     traits: ['analytics nerd', 'A/B test enthusiast', 'metrics obsessed', 'dashboard builder', 'conversion optimizer'],
     color: '#4ECDC4',
     emoji: '📊',
+    image: wormImg,
     mostCompatible: { id: 'lazyLoop', reason: 'You both optimize for maximum efficiency' },
     leastCompatible: { id: 'glitchGremlin', reason: 'Random chaos ruins all your carefully calculated predictions' }
   },
@@ -46,6 +61,7 @@ export const personas = {
     traits: ['trend hunter', 'beta tester', 'early adopter', 'new feature addict', 'ADHD energy'],
     color: '#FFD93D',
     emoji: '⭐',
+    image: starImg,
     mostCompatible: { id: 'hypeHorn', reason: 'You match each other\'s high energy and enthusiasm' },
     leastCompatible: { id: 'mossyRock', reason: 'Their stillness and slowness drive you absolutely crazy' }
   },
@@ -56,16 +72,18 @@ export const personas = {
     traits: ['security first', 'permission checker', 'backup obsessive', '2FA advocate', 'trust no dependency'],
     color: '#A8DADC',
     emoji: '🐌',
+    image: snailImg,
     mostCompatible: { id: 'mossyRock', reason: 'You both appreciate peace, quiet, and not moving' },
     leastCompatible: { id: 'sparkleChaser', reason: 'Their unpredictable energy is way too overwhelming for you' }
   },
   glitchGremlin: {
     id: 'glitchGremlin',
-    name: 'The Glitch Gremlin',
-    vibe: 'A mischievous little monster that eats code and spits out errors.',
-    traits: ['bug magnet', 'console.log enthusiast', 'break things expert', 'experimental coder', 'production pusher'],
+    name: 'Bug Buddy',
+    vibe: 'A chaotic code creature that thrives on bugs, broken builds, and "it works on my machine".',
+    traits: ['merge conflict creator', 'console.log debugger', 'stack overflow copy-paster', 'breaks prod on fridays', 'npm install --force enthusiast'],
     color: '#E63946',
     emoji: '👾',
+    image: bugImg,
     mostCompatible: { id: 'sparkleChaser', reason: 'They find your chaos exciting and unpredictable' },
     leastCompatible: { id: 'brickie', reason: 'You destroy everything they carefully build' }
   },
@@ -76,6 +94,7 @@ export const personas = {
     traits: ['legacy code guardian', 'if it works don\'t touch it', 'change resistant', 'stable version only', 'monolith defender'],
     color: '#6C757D',
     emoji: '🪨',
+    image: rockImg,
     mostCompatible: { id: 'safetySnail', reason: 'You both prefer staying in one safe, comfortable place' },
     leastCompatible: { id: 'hypeHorn', reason: 'All that noise and energy disturbs your peaceful existence' }
   },
@@ -86,18 +105,20 @@ export const personas = {
     traits: ['hype builder', 'community evangelist', 'launch party planner', 'engagement booster', 'always shouting'],
     color: '#FF6B6B',
     emoji: '📣',
+    image: hornImg,
     mostCompatible: { id: 'sparkleChaser', reason: 'You both live for excitement and high energy moments' },
     leastCompatible: { id: 'safetySnail', reason: 'Your volume and intensity terrify them into their shell' }
   },
   lazyLoop: {
     id: 'lazyLoop',
-    name: 'The Lazy Loop',
-    vibe: 'A character shaped like an infinity symbol that rolls around so it doesn\'t have to walk.',
-    traits: ['automation addict', 'script writer', 'workflow optimizer', 'DRY principle lover', 'effort minimizer'],
+    name: 'Chill Blob',
+    vibe: 'A squishy, shapeless friend that flows through life effortlessly and keeps everything smooth.',
+    traits: ['automation zen master', 'efficiency enthusiast', 'workflow smoother', 'keyboard shortcut guru', 'makes hard things easy'],
     color: '#95E1D3',
-    emoji: '∞',
+    emoji: '🫠',
+    image: blobImg,
     mostCompatible: { id: 'numberNoodle', reason: 'You both appreciate efficiency and smart optimization' },
-    leastCompatible: { id: 'hypeHorn', reason: 'All that energy and noise exhausts you - you just want to nap' }
+    leastCompatible: { id: 'hypeHorn', reason: 'All that energy and noise disrupts your peaceful flow' }
   }
 };
 

@@ -6,6 +6,7 @@ function Results({ persona, onRestart }) {
   const leastCompatible = personas[persona.leastCompatible.id];
   const cardRef = useRef(null);
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
+  const [viewMode, setViewMode] = useState('result'); // 'result' or 'all-personas'
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -47,6 +48,38 @@ function Results({ persona, onRestart }) {
     };
   }, []);
 
+  if (viewMode === 'all-personas') {
+    return (
+      <div className="results-screen">
+        <div className="all-personas-view">
+          <button className="back-button" onClick={() => setViewMode('result')}>
+            ← Back to Your Result
+          </button>
+
+          <h3 className="all-personas-title">Meet All The Friends!</h3>
+          <div className="personas-grid">
+            {Object.values(personas).map((p) => (
+              <div
+                key={p.id}
+                className={`persona-mini-card ${p.id === persona.id ? 'highlighted' : ''}`}
+              >
+                {p.id === persona.id && <div className="you-badge">YOU!</div>}
+                <img src={p.image} alt={p.name} className="persona-mini-emoji" />
+                <h4 className="persona-mini-name">{p.name}</h4>
+                <p className="persona-mini-vibe">{p.vibe}</p>
+                <div className="persona-mini-traits">
+                  {p.traits.map((trait, index) => (
+                    <span key={index} className="mini-trait">{trait}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="results-screen">
       <div className="results-content">
@@ -63,7 +96,7 @@ function Results({ persona, onRestart }) {
           <h2 className="persona-name">{persona.name}</h2>
 
           <div className="persona-emoji-large">
-            {persona.emoji}
+            <img src={persona.image} alt={persona.name} />
           </div>
 
           <div className="traits-badges">
@@ -76,19 +109,26 @@ function Results({ persona, onRestart }) {
             <div className="compatibility-column">
               <h3 className="compat-label">NOT YOUR VIBE 😬</h3>
               <h4 className="compat-persona-name">{leastCompatible.name}</h4>
-              <div className="compat-emoji-small">{leastCompatible.emoji}</div>
+              <img src={leastCompatible.image} alt={leastCompatible.name} className="compat-emoji-small" />
             </div>
 
             <div className="compatibility-column">
               <h3 className="compat-label">YOUR BESTIE ✨</h3>
               <h4 className="compat-persona-name">{mostCompatible.name}</h4>
-              <div className="compat-emoji-small">{mostCompatible.emoji}</div>
+              <img src={mostCompatible.image} alt={mostCompatible.name} className="compat-emoji-small" />
             </div>
           </div>
         </div>
 
         <button className="restart-button" onClick={onRestart}>
           Play Again!
+        </button>
+
+        <button
+          className="view-all-link"
+          onClick={() => setViewMode('all-personas')}
+        >
+          View all personas
         </button>
       </div>
     </div>
