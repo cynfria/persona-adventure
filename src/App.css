@@ -26,10 +26,10 @@
 
 .start-card-border {
   position: absolute;
-  top: -11px;
-  left: -23px;
-  width: calc(100% + 46px);
-  height: calc(100% + 22px);
+  top: -7px;
+  left: -31px;
+  width: calc(100% + 62px);
+  height: calc(100% + 14px);
   pointer-events: none;
   z-index: 100;
   object-fit: fill;
@@ -530,10 +530,10 @@
   }
 
   .start-card-border {
-    top: -6px;
-    left: -18px;
-    width: calc(100% + 36px);
-    height: calc(100% + 12px);
+    top: -2px;
+    left: -26px;
+    width: calc(100% + 52px);
+    height: calc(100% + 4px);
   }
 
   .start-content {
