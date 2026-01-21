@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { personas } from '../gameData';
+import borderImg from '../assets/border.png';
 
 function Results({ persona, onRestart }) {
   const mostCompatible = personas[persona.mostCompatible.id];
@@ -90,7 +91,10 @@ function Results({ persona, onRestart }) {
             transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
             transition: 'transform 0.1s ease-out',
             '--shader-x': `${tilt.shaderX || 50}%`,
-            '--shader-y': `${tilt.shaderY || 50}%`
+            '--shader-y': `${tilt.shaderY || 50}%`,
+            borderImage: `url(${borderImg}) 30 stretch`,
+            borderWidth: '20px',
+            borderStyle: 'solid'
           }}
         >
           <h2 className="persona-name">{persona.name}</h2>

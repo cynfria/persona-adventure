@@ -163,8 +163,6 @@
 
 .persona-card {
   background: white;
-  border: 20px solid transparent;
-  border-image: url('./assets/border.png') 30 stretch;
   padding: 30px 25px;
   margin-bottom: 20px;
   text-align: center;
