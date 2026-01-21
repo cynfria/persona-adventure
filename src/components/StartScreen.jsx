@@ -1,7 +1,11 @@
+import borderImg from '../assets/border.png';
+
 function StartScreen({ onStart }) {
   return (
     <div className="start-screen">
-      <div className="start-content">
+      <div className="start-card-wrapper">
+        <img src={borderImg} alt="" className="start-card-border" />
+        <div className="start-content">
         <h1 className="title">Persona Adventure</h1>
         <p className="subtitle">Which lil friend are you?</p>
         <div className="description">
@@ -11,6 +15,7 @@ function StartScreen({ onStart }) {
         <button className="start-button" onClick={onStart}>
           Let's Go!
         </button>
+      </div>
       </div>
     </div>
   );
