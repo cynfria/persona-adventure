@@ -92,6 +92,7 @@ body {
   cursor: pointer;
   transition: all 0.2s;
   font-family: 'Handwriting', 'Courier New', monospace;
+  border-radius: 12px;
 }
 
 .start-button:hover {
@@ -197,6 +198,7 @@ body {
   text-align: center;
   position: relative;
   border: none;
+  border-radius: 16px;
 }
 
 .persona-card::before {
@@ -283,6 +285,7 @@ body {
   font-weight: 900;
   letter-spacing: 0.5px;
   font-family: 'Handwriting', 'Courier New', monospace;
+  border-radius: 8px;
 }
 
 .compatibility-grid {
@@ -329,9 +332,9 @@ body {
 }
 
 .restart-button {
-  background: #666;
-  color: white;
-  border: none;
+  background: transparent;
+  color: #666;
+  border: 2px solid #666;
   padding: 18px 50px;
   font-size: 1.3rem;
   font-weight: 900;
@@ -341,15 +344,18 @@ body {
   font-family: 'Handwriting', 'Courier New', monospace;
   width: 100%;
   max-width: 400px;
+  border-radius: 12px;
 }
 
 .restart-button:hover {
-  background: #555;
+  background: #666;
+  color: white;
   transform: translateY(-2px);
 }
 
 .restart-button:active {
-  background: #666;
+  background: transparent;
+  color: #666;
   transform: translateY(0);
 }
 
@@ -490,6 +496,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.3px;
   font-family: 'Handwriting', 'Courier New', monospace;
+  border-radius: 8px;
 }
 
 /* Animations */
