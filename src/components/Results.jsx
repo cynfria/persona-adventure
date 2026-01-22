@@ -86,20 +86,14 @@ function Results({ persona, onRestart }) {
       <div className="results-content">
         <div
           ref={cardRef}
-          className="persona-card-wrapper"
+          className="persona-card"
           style={{
             transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s ease-out',
+            '--shader-x': `${tilt.shaderX || 50}%`,
+            '--shader-y': `${tilt.shaderY || 50}%`
           }}
         >
-          <img src={borderImg} alt="" className="persona-card-border" />
-          <div
-            className="persona-card"
-            style={{
-              '--shader-x': `${tilt.shaderX || 50}%`,
-              '--shader-y': `${tilt.shaderY || 50}%`
-            }}
-          >
             <h2 className="persona-name">{persona.name}</h2>
 
           <div className="persona-emoji-large">
@@ -125,7 +119,6 @@ function Results({ persona, onRestart }) {
               <img src={mostCompatible.image} alt={mostCompatible.name} className="compat-emoji-small" />
             </div>
           </div>
-        </div>
         </div>
 
         <button className="restart-button" onClick={onRestart}>

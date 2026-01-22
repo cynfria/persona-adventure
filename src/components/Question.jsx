@@ -20,9 +20,7 @@ function Question({ question, questionNumber, totalQuestions, onAnswer }) {
           style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
         ></div>
       </div>
-      <div className="question-card-wrapper">
-        <img src={borderImg} alt="" className="question-card-border" />
-        <div className="question-content">
+      <div className="question-content">
         <p className="question-number">Question {questionNumber} of {totalQuestions}</p>
         <h2 className="scenario">{question.scenario}</h2>
         <div className="choices">
@@ -36,7 +34,6 @@ function Question({ question, questionNumber, totalQuestions, onAnswer }) {
             </button>
           ))}
         </div>
-      </div>
       </div>
     </div>
   );
