@@ -16,6 +16,7 @@
 body {
   font-family: 'Handwriting', 'Courier New', monospace;
   font-weight: 700;
+  word-spacing: 0.2em;
 }
 
 .App {
