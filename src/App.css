@@ -21,10 +21,10 @@ body {
 .App {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: white;
-  padding: 20px;
+  padding: 60px 20px 20px 20px;
 }
 
 /* Start Screen */
@@ -510,7 +510,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .App {
-    padding: 15px;
+    padding: 40px 15px 15px 15px;
   }
 
   .start-persona-image img {
@@ -595,7 +595,7 @@ body {
 
 @media (max-width: 480px) {
   .App {
-    padding: 10px;
+    padding: 30px 10px 10px 10px;
   }
 
   .start-persona-image img {
