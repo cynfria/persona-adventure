@@ -141,6 +141,7 @@ body {
   letter-spacing: 2px;
   display: inline-block;
   font-family: 'Handwriting', 'Courier New', monospace;
+  border-radius: 12px;
 }
 
 .scenario {
