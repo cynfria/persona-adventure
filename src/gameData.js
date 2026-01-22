@@ -14,7 +14,7 @@ export const personas = {
     id: 'brickie',
     name: 'Blocky',
     vibe: 'A colorful, blocky friend who loves snapping pieces together perfectly.',
-    traits: ['modular design master', 'component builder', 'loves clean layouts', 'design system architect', 'everything must click together'],
+    traits: ['modular design master', 'alphabetizes cereal boxes', 'color codes closet by RGB value', 'only eats square foods', 'everything must click together', 'owns 12 types of containers', 'labels the label maker'],
     color: '#D2691E',
     emoji: '🧱',
     image: blockImg,
@@ -25,7 +25,7 @@ export const personas = {
     id: 'pixelPuff',
     name: 'The Pixel Puff',
     vibe: 'A soft, colorful cloud that changes colors based on its mood.',
-    traits: ['color palette perfectionist', 'gradient master', 'font pairing expert', 'dribbble browser', 'allergic to Comic Sans'],
+    traits: ['color palette perfectionist', 'drinks matcha lattes only', 'has 47 pinterest boards', 'cries at sunsets', 'allergic to Comic Sans', 'rearranges furniture weekly', 'owns too many throw pillows'],
     color: '#FFB6D9',
     emoji: '☁️',
     image: pixelImg,
@@ -36,7 +36,7 @@ export const personas = {
     id: 'stickyNote',
     name: 'The Sticky Note',
     vibe: 'A helpful, square piece of paper that sticks to everyone to remind them of things.',
-    traits: ['kanban board addict', 'task master', 'documentation lover', 'Notion power user', 'reminder champion'],
+    traits: ['kanban board addict', 'meal preps on sundays', 'has 3 different planners', 'sends calendar invites to nap', 'reminder champion', 'makes lists of lists', 'arrives 30 min early everywhere'],
     color: '#FFE66D',
     emoji: '📝',
     image: stickyImg,
@@ -47,7 +47,7 @@ export const personas = {
     id: 'numberNoodle',
     name: 'The Number Noodle',
     vibe: 'A long, wiggly worm made of graphs and digits.',
-    traits: ['analytics nerd', 'A/B test enthusiast', 'metrics obsessed', 'dashboard builder', 'conversion optimizer'],
+    traits: ['analytics nerd', 'tracks daily steps religiously', 'rates everything out of 10', 'counts sheep in spreadsheets', 'conversion optimizer', 'budgets fun to the penny', 'times showers for efficiency'],
     color: '#4ECDC4',
     emoji: '📊',
     image: wormImg,
@@ -58,7 +58,7 @@ export const personas = {
     id: 'sparkleChaser',
     name: 'The Sparkle Chaser',
     vibe: 'A hyperactive creature that runs after anything shiny.',
-    traits: ['trend hunter', 'beta tester', 'early adopter', 'new feature addict', 'ADHD energy'],
+    traits: ['trend hunter', '47 unfinished hobbies', 'buys every new gadget', 'drinks 6 coffees a day', 'ADHD energy', 'forgets why they entered rooms', 'has 284 browser tabs open'],
     color: '#FFD93D',
     emoji: '⭐',
     image: starImg,
@@ -69,7 +69,7 @@ export const personas = {
     id: 'safetySnail',
     name: 'The Safety Snail',
     vibe: 'A shy creature that hides in its tough shell when strangers appear.',
-    traits: ['security first', 'permission checker', 'backup obsessive', '2FA advocate', 'trust no dependency'],
+    traits: ['security first', 'wears helmet indoors', 'triple checks locks', 'reads all terms & conditions', 'trust no dependency', 'uses VPN at home', 'googles people before meeting them'],
     color: '#A8DADC',
     emoji: '🐌',
     image: snailImg,
@@ -80,7 +80,7 @@ export const personas = {
     id: 'glitchGremlin',
     name: 'Bug Buddy',
     vibe: 'A chaotic code creature that thrives on bugs, broken builds, and "it works on my machine".',
-    traits: ['merge conflict creator', 'console.log debugger', 'stack overflow copy-paster', 'breaks prod on fridays', 'npm install --force enthusiast'],
+    traits: ['merge conflict creator', 'eats pizza for breakfast', 'sleeps in jeans', 'breaks prod on fridays', 'lost 3 wallets this year', 'replies to emails at 3am', 'thinks documentation is optional'],
     color: '#E63946',
     emoji: '👾',
     image: bugImg,
@@ -91,7 +91,7 @@ export const personas = {
     id: 'mossyRock',
     name: 'The Mossy Rock',
     vibe: 'An ancient, unmoving boulder that has been here since the beginning of time.',
-    traits: ['legacy code guardian', 'if it works don\'t touch it', 'change resistant', 'stable version only', 'monolith defender'],
+    traits: ['legacy code guardian', 'same lunch for 10 years', 'still uses windows XP', 'naps 3 times daily', 'monolith defender', 'refuses to update anything', 'has had same haircut since 2008'],
     color: '#6C757D',
     emoji: '🪨',
     image: rockImg,
@@ -102,7 +102,7 @@ export const personas = {
     id: 'hypeHorn',
     name: 'The Hype Horn',
     vibe: 'A loud, energetic megaphone creature that loves parties.',
-    traits: ['hype builder', 'community evangelist', 'launch party planner', 'engagement booster', 'always shouting'],
+    traits: ['hype builder', 'texts in all caps', 'dances in grocery stores', 'knows everyone somehow', 'always shouting', 'triple books weekends', 'photobombs strangers'],
     color: '#FF6B6B',
     emoji: '📣',
     image: hornImg,
@@ -113,7 +113,7 @@ export const personas = {
     id: 'lazyLoop',
     name: 'Chill Blob',
     vibe: 'A squishy, shapeless friend that flows through life effortlessly and keeps everything smooth.',
-    traits: ['automation zen master', 'efficiency enthusiast', 'workflow smoother', 'keyboard shortcut guru', 'makes hard things easy'],
+    traits: ['automation zen master', 'works from bed', 'orders groceries online', 'invented the 2-hour nap', 'makes hard things easy', 'wears pajamas to meetings', 'automates birthday texts'],
     color: '#95E1D3',
     emoji: '🫠',
     image: blobImg,
@@ -125,7 +125,7 @@ export const personas = {
 export const questions = [
   {
     id: 1,
-    scenario: "✨ You wake up in a funky digital world! What catches your eye first?",
+    scenario: "You wake up in a funky digital world! What catches your eye first?",
     choices: [
       {
         text: "Ooh, everything is so neat and organized!",
@@ -147,7 +147,7 @@ export const questions = [
   },
   {
     id: 2,
-    scenario: "🎮 A cute lil creature bounces up and offers you a quest!",
+    scenario: "A cute lil creature bounces up and offers you a quest!",
     choices: [
       {
         text: "YES YES YES LET'S GOOO!! 🏃‍♀️",
@@ -169,7 +169,7 @@ export const questions = [
   },
   {
     id: 3,
-    scenario: "🔧 You find a mysterious gadget! What's your move?",
+    scenario: "You find a mysterious gadget! What's your move?",
     choices: [
       {
         text: "Time to build something cool and organized!",
@@ -191,7 +191,7 @@ export const questions = [
   },
   {
     id: 4,
-    scenario: "👥 Your squad needs a leader! What do you do?",
+    scenario: "Your squad needs a leader! What do you do?",
     choices: [
       {
         text: "GET HYPED!! *rallies everyone*",
@@ -213,7 +213,7 @@ export const questions = [
   },
   {
     id: 5,
-    scenario: "🚪 Locked door with a puzzle! How do you crack it?",
+    scenario: "Locked door with a puzzle! How do you crack it?",
     choices: [
       {
         text: "Build a solution piece by piece!",
@@ -235,7 +235,7 @@ export const questions = [
   },
   {
     id: 6,
-    scenario: "🚨 CHAOS ALERT!! Everything's going wrong! What now?",
+    scenario: "CHAOS ALERT!! Everything's going wrong! What now?",
     choices: [
       {
         text: "TIME TO TAKE CHARGE!! 📢",
@@ -257,7 +257,7 @@ export const questions = [
   },
   {
     id: 7,
-    scenario: "🎁 Treasure chest!! What do you hope is inside?",
+    scenario: "Treasure chest!! What do you hope is inside?",
     choices: [
       {
         text: "SPARKLES AND SHINY THINGS!! ✨",
@@ -279,7 +279,7 @@ export const questions = [
   },
   {
     id: 8,
-    scenario: "🎉 Victory!! Time to celebrate! What's your vibe?",
+    scenario: "Victory!! Time to celebrate! What's your vibe?",
     choices: [
       {
         text: "PARTY TIME!! *blasts music*",
@@ -301,7 +301,7 @@ export const questions = [
   },
   {
     id: 9,
-    scenario: "💼 Someone needs your help on a project!",
+    scenario: "Someone needs your help on a project!",
     choices: [
       {
         text: "Let me build you a solid plan!",
@@ -323,7 +323,7 @@ export const questions = [
   },
   {
     id: 10,
-    scenario: "🌟 The end! What's your legacy?",
+    scenario: "The end! What's your legacy?",
     choices: [
       {
         text: "A solid foundation for future friends!",

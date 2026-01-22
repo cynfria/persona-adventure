@@ -15,6 +15,7 @@
 
 body {
   font-family: 'Handwriting', 'Courier New', monospace;
+  font-weight: 700;
 }
 
 .App {
@@ -46,8 +47,8 @@ body {
 }
 
 .start-persona-image img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: contain;
 }
 
@@ -64,8 +65,7 @@ body {
   font-size: 1.1rem;
   color: #000;
   margin-bottom: 40px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -74,6 +74,7 @@ body {
   color: #333;
   line-height: 1.8;
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .description p {
@@ -81,13 +82,12 @@ body {
 }
 
 .start-button {
-  background: #000;
+  background: #666;
   color: white;
   border: none;
   padding: 18px 50px;
   font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 900;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s;
@@ -95,12 +95,12 @@ body {
 }
 
 .start-button:hover {
-  background: #333;
+  background: #555;
   transform: translateY(-2px);
 }
 
 .start-button:active {
-  background: #000;
+  background: #666;
   transform: translateY(0);
 }
 
@@ -111,17 +111,19 @@ body {
 }
 
 .progress-bar {
-  background: white;
-  height: 20px;
-  border: 4px solid #000;
+  background: #f0f0f0;
+  height: 6px;
+  border: none;
   margin-bottom: 30px;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .progress-fill {
   height: 100%;
-  background: #000;
+  background: #666;
   transition: width 0.3s ease;
+  border-radius: 6px;
 }
 
 .question-content {
@@ -130,13 +132,12 @@ body {
 }
 
 .question-number {
-  background: #000;
+  background: #666;
   color: white;
   padding: 8px 20px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 30px;
   font-size: 0.85rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
   font-family: 'Handwriting', 'Courier New', monospace;
@@ -147,7 +148,7 @@ body {
   color: #000;
   margin-bottom: 40px;
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .choices {
@@ -157,8 +158,8 @@ body {
 }
 
 .choice-button {
-  background: white;
-  border: 4px solid #000;
+  background: #f5f5f5;
+  border: none;
   padding: 20px 26px;
   font-size: 1.05rem;
   cursor: pointer;
@@ -166,12 +167,13 @@ body {
   text-align: left;
   color: #000;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Handwriting', 'Courier New', monospace;
+  border-radius: 12px;
 }
 
 .choice-button:hover {
-  background: #000;
-  color: white;
+  background: #e0e0e0;
 }
 
 .choice-button:active {
@@ -184,11 +186,16 @@ body {
   width: 100%;
 }
 
+.results-screen:has(.all-personas-view) {
+  max-width: 1100px;
+}
+
 .persona-card {
   margin-bottom: 20px;
   padding: 30px 25px;
   text-align: center;
   position: relative;
+  border: none;
 }
 
 .persona-card::before {
@@ -241,7 +248,6 @@ body {
   color: #000;
   margin-bottom: 15px;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: -2px;
   line-height: 1;
 }
@@ -255,8 +261,8 @@ body {
 }
 
 .persona-emoji-large img {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   object-fit: contain;
 }
 
@@ -269,12 +275,11 @@ body {
 }
 
 .trait-badge {
-  background: #000;
+  background: #666;
   color: white;
   padding: 8px 16px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: 900;
   letter-spacing: 0.5px;
   font-family: 'Handwriting', 'Courier New', monospace;
 }
@@ -285,7 +290,6 @@ body {
   gap: 20px;
   margin-top: 25px;
   padding-top: 20px;
-  border-top: 4px solid #000;
 }
 
 .compatibility-column {
@@ -293,18 +297,17 @@ body {
 }
 
 .compat-label {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: #000;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
 
 .compat-persona-name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #000;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 10px;
   line-height: 1.1;
@@ -325,13 +328,12 @@ body {
 }
 
 .restart-button {
-  background: #000;
+  background: #666;
   color: white;
   border: none;
   padding: 18px 50px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 900;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s;
@@ -341,21 +343,21 @@ body {
 }
 
 .restart-button:hover {
-  background: #333;
+  background: #555;
   transform: translateY(-2px);
 }
 
 .restart-button:active {
-  background: #000;
+  background: #666;
   transform: translateY(0);
 }
 
 .view-all-link {
   background: none;
   border: none;
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 400;
+  color: #000;
+  font-size: 1.05rem;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: underline;
   margin-top: 20px;
@@ -371,35 +373,41 @@ body {
 /* All Personas View */
 .all-personas-view {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .back-button {
   background: none;
-  border: 3px solid white;
-  color: white;
-  padding: 12px 30px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border: none;
+  padding: 0;
   cursor: pointer;
   transition: all 0.2s;
-  font-family: 'Handwriting', 'Courier New', monospace;
-  margin-bottom: 30px;
+  display: block;
 }
 
 .back-button:hover {
-  background: white;
-  color: #2a2a2a;
+  opacity: 0.7;
+}
+
+.back-arrow-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.all-personas-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .all-personas-title {
   font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin-bottom: 30px;
+  color: #000;
+  margin: 0;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: -1px;
 }
 
@@ -407,21 +415,23 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .persona-mini-card {
-  background: white;
-  border: 6px solid #000;
-  padding: 25px 20px;
+  background: #f5f5f5;
+  border: none;
+  padding: 30px 25px;
   text-align: center;
   position: relative;
   transition: all 0.2s;
+  border-radius: 16px;
 }
 
 .persona-mini-card.highlighted {
-  border-color: #FFD93D;
-  box-shadow: 0 0 0 4px #FFD93D;
-  transform: scale(1.02);
+  background: #fffbf0;
+  box-shadow: 0 4px 12px rgba(255, 217, 61, 0.3);
 }
 
 .you-badge {
@@ -433,54 +443,52 @@ body {
   padding: 6px 14px;
   font-size: 0.75rem;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Handwriting', 'Courier New', monospace;
-  border: 4px solid #000;
+  border: none;
   z-index: 10;
+  border-radius: 8px;
 }
 
 .persona-mini-emoji {
   width: 160px;
   height: 160px;
   object-fit: contain;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 8px auto;
 }
 
 .persona-mini-name {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: -1px;
   margin-bottom: 12px;
   line-height: 1.1;
 }
 
 .persona-mini-vibe {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #333;
   line-height: 1.4;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .persona-mini-traits {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 6px;
-  align-items: center;
+  justify-content: center;
 }
 
 .mini-trait {
-  background: #000;
+  background: #666;
   color: white;
-  padding: 6px 12px;
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  padding: 7px 13px;
+  font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 0.3px;
   font-family: 'Handwriting', 'Courier New', monospace;
-  width: 100%;
 }
 
 /* Animations */
@@ -495,108 +503,63 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+  .App {
+    padding: 15px;
   }
 
-  .start-card-wrapper {
-    padding: 10px;
-  }
-
-  .start-card-border {
-    top: -2px;
-    left: -26px;
-    width: calc(100% + 52px);
-    height: calc(100% + 4px);
+  .start-persona-image img {
+    width: 200px;
+    height: 200px;
   }
 
   .start-content {
-    padding: 40px 30px;
-  }
-
-  .question-card-wrapper {
-    padding: 10px;
-  }
-
-  .question-card-border {
-    top: -6px;
-    left: -30px;
-    width: calc(100% + 60px);
-    height: calc(100% + 12px);
+    padding: 40px 25px;
   }
 
   .question-content {
-    padding: 35px 25px;
-  }
-
-  .scenario {
-    font-size: 1.5rem;
+    padding: 35px 20px;
   }
 
   .choice-button {
-    padding: 18px 22px;
-    border-width: 3px;
-  }
-
-  .persona-card-wrapper {
-    padding: 10px;
+    padding: 16px 20px;
   }
 
   .persona-card {
-    padding: 25px 20px;
-  }
-
-  .persona-card-border {
-    top: -6px;
-    left: -18px;
-    width: calc(100% + 36px);
-    height: calc(100% + 12px);
-  }
-
-  .persona-name {
-    font-size: 1.6rem;
+    padding: 25px 15px;
   }
 
   .persona-emoji-large img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .trait-badge {
-    padding: 6px 12px;
-    font-size: 0.7rem;
+    width: 180px;
+    height: 180px;
   }
 
   .compatibility-grid {
     gap: 15px;
-    border-top-width: 3px;
     margin-top: 20px;
     padding-top: 15px;
   }
 
-  .compat-persona-name {
-    font-size: 1rem;
-  }
-
   .compat-emoji-small {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
 
   .progress-bar {
-    height: 16px;
-    border-width: 3px;
+    height: 5px;
+    border-radius: 5px;
   }
 
-  .all-personas-title {
-    font-size: 1.5rem;
+  .progress-fill {
+    border-radius: 5px;
   }
 
-  .back-button {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-    border-width: 2px;
+  .back-arrow-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .all-personas-header {
+    gap: 15px;
   }
 
   .personas-grid {
@@ -605,18 +568,51 @@ body {
   }
 
   .persona-mini-card {
-    border-width: 4px;
     padding: 20px 15px;
   }
 
   .persona-mini-card.highlighted {
-    box-shadow: 0 0 0 3px #FFD93D;
+    box-shadow: 0 3px 10px rgba(255, 217, 61, 0.3);
   }
 
   .you-badge {
-    padding: 4px 10px;
-    font-size: 0.65rem;
-    border-width: 3px;
+    padding: 5px 11px;
+    border-radius: 6px;
+  }
+
+  .persona-mini-emoji {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+
+  .start-persona-image img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .start-content {
+    padding: 30px 20px;
+  }
+
+  .choice-button {
+    padding: 14px 18px;
+    border-radius: 10px;
+  }
+
+  .persona-emoji-large img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .compat-emoji-small {
+    width: 85px;
+    height: 85px;
   }
 
   .persona-mini-emoji {
@@ -624,16 +620,16 @@ body {
     height: 120px;
   }
 
-  .persona-mini-name {
-    font-size: 1rem;
+  .back-arrow-img {
+    width: 24px;
+    height: 24px;
   }
 
-  .persona-mini-vibe {
-    font-size: 0.8rem;
+  .all-personas-header {
+    gap: 12px;
   }
 
-  .mini-trait {
-    font-size: 0.6rem;
-    padding: 5px 10px;
+  .all-personas-title {
+    font-size: 1.6rem;
   }
 }

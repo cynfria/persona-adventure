@@ -1,63 +1,23 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { personas } from '../gameData';
 import borderImg from '../assets/border.svg';
+import backArrow from '../assets/arrow.png';
 
 function Results({ persona, onRestart }) {
   const mostCompatible = personas[persona.mostCompatible.id];
   const leastCompatible = personas[persona.leastCompatible.id];
-  const cardRef = useRef(null);
-  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
   const [viewMode, setViewMode] = useState('result'); // 'result' or 'all-personas'
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (!cardRef.current) return;
-
-      const card = cardRef.current;
-      const rect = card.getBoundingClientRect();
-      const cardCenterX = rect.left + rect.width / 2;
-      const cardCenterY = rect.top + rect.height / 2;
-
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-
-      const rotateY = ((mouseX - cardCenterX) / (rect.width / 2)) * 10;
-      const rotateX = ((cardCenterY - mouseY) / (rect.height / 2)) * 10;
-
-      // Calculate shader position (0 to 100)
-      const shaderX = ((mouseX - rect.left) / rect.width) * 100;
-      const shaderY = ((mouseY - rect.top) / rect.height) * 100;
-
-      setTilt({ rotateX, rotateY, shaderX, shaderY });
-    };
-
-    const handleMouseLeave = () => {
-      setTilt({ rotateX: 0, rotateY: 0, shaderX: 50, shaderY: 50 });
-    };
-
-    const card = cardRef.current;
-    if (card) {
-      card.addEventListener('mousemove', handleMouseMove);
-      card.addEventListener('mouseleave', handleMouseLeave);
-    }
-
-    return () => {
-      if (card) {
-        card.removeEventListener('mousemove', handleMouseMove);
-        card.removeEventListener('mouseleave', handleMouseLeave);
-      }
-    };
-  }, []);
 
   if (viewMode === 'all-personas') {
     return (
       <div className="results-screen">
         <div className="all-personas-view">
-          <button className="back-button" onClick={() => setViewMode('result')}>
-            ← Back to Your Result
-          </button>
-
-          <h3 className="all-personas-title">Meet All The Friends!</h3>
+          <div className="all-personas-header">
+            <button className="back-button" onClick={() => setViewMode('result')}>
+              <img src={backArrow} alt="Back" className="back-arrow-img" />
+            </button>
+            <h3 className="all-personas-title">Meet All The Friends!</h3>
+          </div>
           <div className="personas-grid">
             {Object.values(personas).map((p) => (
               <div
@@ -84,16 +44,7 @@ function Results({ persona, onRestart }) {
   return (
     <div className="results-screen">
       <div className="results-content">
-        <div
-          ref={cardRef}
-          className="persona-card"
-          style={{
-            transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
-            transition: 'transform 0.1s ease-out',
-            '--shader-x': `${tilt.shaderX || 50}%`,
-            '--shader-y': `${tilt.shaderY || 50}%`
-          }}
-        >
+        <div className="persona-card">
             <h2 className="persona-name">{persona.name}</h2>
 
           <div className="persona-emoji-large">
