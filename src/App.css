@@ -1,7 +1,6 @@
 @font-face {
-  font-family: 'Handwriting';
-  src: url('./assets/Handwriting-Regular.woff2') format('woff2'),
-       url('./assets/Handwriting-Regular.ttf') format('truetype');
+  font-family: 'RoadRage';
+  src: url('./assets/RoadRage-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,7 +13,7 @@
 }
 
 body {
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   font-weight: 700;
   word-spacing: 0.2em;
 }
@@ -92,7 +91,7 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   border-radius: 12px;
 }
 
@@ -142,7 +141,7 @@ body {
   font-size: 0.85rem;
   letter-spacing: 2px;
   display: inline-block;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   border-radius: 12px;
 }
 
@@ -163,7 +162,7 @@ body {
 }
 
 .question-image img {
-  max-width: 300px;
+  max-width: 225px;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -186,7 +185,7 @@ body {
   color: #000;
   line-height: 1.5;
   font-weight: 700;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   border-radius: 12px;
 }
 
@@ -257,7 +256,7 @@ body {
   font-size: 0.95rem;
   font-weight: 900;
   letter-spacing: 0.5px;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   border-radius: 8px;
 }
 
@@ -314,7 +313,7 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
@@ -341,7 +340,7 @@ body {
   margin-top: 20px;
   padding: 10px;
   transition: opacity 0.2s;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
 }
 
 .view-all-link:hover {
@@ -422,7 +421,7 @@ body {
   font-size: 0.75rem;
   font-weight: 900;
   letter-spacing: 1px;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   border: none;
   z-index: 10;
   border-radius: 8px;
@@ -466,7 +465,7 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.3px;
-  font-family: 'Handwriting', 'Courier New', monospace;
+  font-family: 'RoadRage', 'Courier New', monospace;
   border-radius: 8px;
 }
 
@@ -586,7 +585,7 @@ body {
   }
 
   .question-image img {
-    max-width: 200px;
+    max-width: 150px;
   }
 
   .persona-emoji-large img {
