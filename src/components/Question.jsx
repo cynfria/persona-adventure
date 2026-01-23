@@ -21,7 +21,6 @@ function Question({ question, questionNumber, totalQuestions, onAnswer }) {
         ></div>
       </div>
       <div className="question-content">
-        <p className="question-number">Question {questionNumber} of {totalQuestions}</p>
         <h2 className="scenario">{question.scenario}</h2>
         {question.image && (
           <div className="question-image">

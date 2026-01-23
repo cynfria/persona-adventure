@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { personas } from '../gameData';
 import borderImg from '../assets/border.svg';
-import backArrow from '../assets/arrow.png';
 
 function Results({ persona, onRestart }) {
   const mostCompatible = personas[persona.mostCompatible.id];
@@ -14,7 +13,7 @@ function Results({ persona, onRestart }) {
         <div className="all-personas-view">
           <div className="all-personas-header">
             <button className="back-button" onClick={() => setViewMode('result')}>
-              <img src={backArrow} alt="Back" className="back-arrow-img" />
+              <span className="back-arrow-text">←</span>
             </button>
             <h3 className="all-personas-title">Meet All The Friends!</h3>
           </div>
@@ -59,13 +58,13 @@ function Results({ persona, onRestart }) {
 
           <div className="compatibility-grid">
             <div className="compatibility-column">
-              <h3 className="compat-label">NOT YOUR VIBE 😬</h3>
+              <h3 className="compat-label">NOT YOUR VIBE</h3>
               <h4 className="compat-persona-name">{leastCompatible.name}</h4>
               <img src={leastCompatible.image} alt={leastCompatible.name} className="compat-emoji-small" />
             </div>
 
             <div className="compatibility-column">
-              <h3 className="compat-label">YOUR BESTIE ✨</h3>
+              <h3 className="compat-label">YOUR BESTIE</h3>
               <h4 className="compat-persona-name">{mostCompatible.name}</h4>
               <img src={mostCompatible.image} alt={mostCompatible.name} className="compat-emoji-small" />
             </div>
@@ -73,7 +72,7 @@ function Results({ persona, onRestart }) {
         </div>
 
         <button className="restart-button" onClick={onRestart}>
-          Play Again!
+          Play again
         </button>
 
         <button

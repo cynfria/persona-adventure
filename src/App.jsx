@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import StartScreen from './components/StartScreen';
 import Question from './components/Question';
@@ -17,10 +17,43 @@ function App() {
     safetySnail: 0,
     glitchGremlin: 0,
     mossyRock: 0,
-    hypeHorn: 0,
-    lazyLoop: 0
+    bouncyBall: 0,
+    lazyLoop: 0,
+    coffeeCup: 0,
+    sleepyMoon: 0,
+    rubberDuck: 0
   });
   const [result, setResult] = useState(null);
+
+  // Cursor trail effect
+  useEffect(() => {
+    const createTrail = (e) => {
+      const trail = document.createElement('div');
+      trail.className = 'cursor-trail';
+      trail.style.left = e.pageX + 'px';
+      trail.style.top = e.pageY + 'px';
+      document.body.appendChild(trail);
+
+      setTimeout(() => {
+        trail.remove();
+      }, 800);
+    };
+
+    let throttleTimer;
+    const handleMouseMove = (e) => {
+      if (throttleTimer) return;
+      throttleTimer = setTimeout(() => {
+        createTrail(e);
+        throttleTimer = null;
+      }, 30);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   const startGame = () => {
     setGameState('playing');
@@ -34,8 +67,11 @@ function App() {
       safetySnail: 0,
       glitchGremlin: 0,
       mossyRock: 0,
-      hypeHorn: 0,
-      lazyLoop: 0
+      bouncyBall: 0,
+      lazyLoop: 0,
+      coffeeCup: 0,
+      sleepyMoon: 0,
+      rubberDuck: 0
     });
   };
 
