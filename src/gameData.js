@@ -62,7 +62,7 @@ export const personas = {
     color: '#FFD93D',
     emoji: '⭐',
     image: starImg,
-    mostCompatible: { id: 'hypeHorn', reason: 'You match each other\'s high energy and enthusiasm' },
+    mostCompatible: { id: 'bouncyBall', reason: 'You match each other\'s high energy and enthusiasm' },
     leastCompatible: { id: 'mossyRock', reason: 'Their stillness and slowness drive you absolutely crazy' }
   },
   safetySnail: {
@@ -96,18 +96,18 @@ export const personas = {
     emoji: '🪨',
     image: rockImg,
     mostCompatible: { id: 'safetySnail', reason: 'You both prefer staying in one safe, comfortable place' },
-    leastCompatible: { id: 'hypeHorn', reason: 'All that noise and energy disturbs your peaceful existence' }
+    leastCompatible: { id: 'bouncyBall', reason: 'All that noise and energy disturbs your peaceful existence' }
   },
-  hypeHorn: {
-    id: 'hypeHorn',
-    name: 'The Hype Horn',
-    vibe: 'A loud, energetic megaphone creature that loves parties.',
-    traits: ['energetic', 'texts in all caps', 'dances in grocery stores', 'knows everyone somehow', 'loud', 'triple books weekends', 'photobombs strangers'],
+  bouncyBall: {
+    id: 'bouncyBall',
+    name: 'Bouncy Ball',
+    vibe: 'A cheerful, bouncy friend that can\'t sit still and spreads good vibes everywhere.',
+    traits: ['energetic', 'texts in all caps', 'dances in grocery stores', 'knows everyone somehow', 'optimistic', 'triple books weekends', 'photobombs strangers'],
     color: '#FF6B6B',
-    emoji: '📣',
+    emoji: '🏐',
     image: hornImg,
     mostCompatible: { id: 'sparkleChaser', reason: 'You both live for excitement and high energy moments' },
-    leastCompatible: { id: 'safetySnail', reason: 'Your volume and intensity terrify them into their shell' }
+    leastCompatible: { id: 'safetySnail', reason: 'Your endless energy and enthusiasm overwhelm them' }
   },
   lazyLoop: {
     id: 'lazyLoop',
@@ -118,7 +118,40 @@ export const personas = {
     emoji: '🫠',
     image: blobImg,
     mostCompatible: { id: 'numberNoodle', reason: 'You both appreciate efficiency and smart optimization' },
-    leastCompatible: { id: 'hypeHorn', reason: 'All that energy and noise disrupts your peaceful flow' }
+    leastCompatible: { id: 'bouncyBall', reason: 'All that energy and noise disrupts your peaceful flow' }
+  },
+  coffeeCup: {
+    id: 'coffeeCup',
+    name: 'Coffee Cup',
+    vibe: 'A warm, energizing friend who\'s always buzzing with ideas and enthusiasm.',
+    traits: ['caffeinated', 'morning person', 'always has new ideas', 'talks really fast', 'productive', 'wakes up at 5am', 'needs constant stimulation'],
+    color: '#8B4513',
+    emoji: '☕',
+    image: blockImg,
+    mostCompatible: { id: 'sparkleChaser', reason: 'You both have endless energy and enthusiasm' },
+    leastCompatible: { id: 'mossyRock', reason: 'Your constant energy exhausts their slow, steady pace' }
+  },
+  sleepyMoon: {
+    id: 'sleepyMoon',
+    name: 'Sleepy Moon',
+    vibe: 'A dreamy, nocturnal friend who thinks deeply and feels everything intensely.',
+    traits: ['nocturnal', 'creative at 2am', 'overthinks everything', 'loves stargazing', 'moody', 'writes poetry', 'sleeps til noon'],
+    color: '#C8A2C8',
+    emoji: '🌙',
+    image: pixelImg,
+    mostCompatible: { id: 'pixelPuff', reason: 'You both appreciate beauty and deep feelings' },
+    leastCompatible: { id: 'coffeeCup', reason: 'Their morning energy clashes with your night owl schedule' }
+  },
+  rubberDuck: {
+    id: 'rubberDuck',
+    name: 'Rubber Duck',
+    vibe: 'A patient, supportive friend who listens without judgment and helps you figure things out.',
+    traits: ['patient', 'good listener', 'asks helpful questions', 'non-judgmental', 'supportive', 'always available', 'debugging expert'],
+    color: '#FFD700',
+    emoji: '🦆',
+    image: stickyImg,
+    mostCompatible: { id: 'safetySnail', reason: 'You both value careful, thoughtful approaches' },
+    leastCompatible: { id: 'glitchGremlin', reason: 'Their chaos stresses you out' }
   }
 };
 
@@ -133,7 +166,7 @@ export const questions = [
       },
       {
         text: "OMG the colors are SO pretty!! 🌈",
-        scores: { pixelPuff: 2, hypeHorn: 1 }
+        scores: { pixelPuff: 2, bouncyBall: 1 }
       },
       {
         text: "Cool, floating numbers everywhere!",
@@ -151,11 +184,11 @@ export const questions = [
     choices: [
       {
         text: "YES YES YES LET'S GOOO!! 🏃‍♀️",
-        scores: { sparkleChaser: 2, hypeHorn: 2 }
+        scores: { sparkleChaser: 2, bouncyBall: 2, coffeeCup: 1 }
       },
       {
         text: "Wait, lemme write this down! 📝",
-        scores: { stickyNote: 2, numberNoodle: 2 }
+        scores: { stickyNote: 2, numberNoodle: 2, rubberDuck: 1 }
       },
       {
         text: "*hides* stranger danger!!",
@@ -177,7 +210,7 @@ export const questions = [
       },
       {
         text: "Can I make it prettier? ✨",
-        scores: { pixelPuff: 2, safetySnail: 1 }
+        scores: { pixelPuff: 2, sleepyMoon: 1 }
       },
       {
         text: "Hmm, let me calculate the optimal use case...",
@@ -195,7 +228,7 @@ export const questions = [
     choices: [
       {
         text: "GET HYPED!! *rallies everyone*",
-        scores: { hypeHorn: 2, sparkleChaser: 2 }
+        scores: { bouncyBall: 2, sparkleChaser: 2 }
       },
       {
         text: "Make a checklist for everyone!",
@@ -221,7 +254,7 @@ export const questions = [
       },
       {
         text: "Match all the pretty colors! 🎨",
-        scores: { pixelPuff: 2, hypeHorn: 1 }
+        scores: { pixelPuff: 2, bouncyBall: 1 }
       },
       {
         text: "Calculate the sequence... *thinking emoji*",
@@ -239,7 +272,7 @@ export const questions = [
     choices: [
       {
         text: "TIME TO TAKE CHARGE!! 📢",
-        scores: { hypeHorn: 2, brickie: 1 }
+        scores: { bouncyBall: 2, coffeeCup: 1 }
       },
       {
         text: "*retreats into cozy hiding spot*",
@@ -251,7 +284,7 @@ export const questions = [
       },
       {
         text: "Let me analyze the situation calmly...",
-        scores: { numberNoodle: 2, stickyNote: 1 }
+        scores: { numberNoodle: 2, rubberDuck: 1 }
       }
     ]
   },
@@ -265,7 +298,7 @@ export const questions = [
       },
       {
         text: "Perfect art supplies in dreamy colors!",
-        scores: { pixelPuff: 2, safetySnail: 1 }
+        scores: { pixelPuff: 2, sleepyMoon: 1 }
       },
       {
         text: "The world's best notebook!! 📓",
@@ -283,7 +316,7 @@ export const questions = [
     choices: [
       {
         text: "PARTY TIME!! *blasts music*",
-        scores: { hypeHorn: 2, sparkleChaser: 2 }
+        scores: { bouncyBall: 2, sparkleChaser: 2, coffeeCup: 1 }
       },
       {
         text: "Aesthetic celebration with good vibes only~",
@@ -305,19 +338,19 @@ export const questions = [
     choices: [
       {
         text: "Let me build you a solid plan!",
-        scores: { brickie: 2, numberNoodle: 1 }
+        scores: { brickie: 2, rubberDuck: 1 }
       },
       {
         text: "I'll make it look AMAZING! ✨",
-        scores: { pixelPuff: 2, sparkleChaser: 1 }
+        scores: { pixelPuff: 2, sleepyMoon: 1 }
       },
       {
         text: "I know how to optimize this!",
-        scores: { lazyLoop: 2, stickyNote: 1 }
+        scores: { lazyLoop: 2, coffeeCup: 1 }
       },
       {
         text: "Whoops I made it weird lol",
-        scores: { glitchGremlin: 2, safetySnail: 1 }
+        scores: { glitchGremlin: 2, sparkleChaser: 1 }
       }
     ]
   },
@@ -327,11 +360,11 @@ export const questions = [
     choices: [
       {
         text: "A solid foundation for future friends!",
-        scores: { brickie: 2, mossyRock: 2 }
+        scores: { brickie: 2, rubberDuck: 2 }
       },
       {
         text: "Beautiful vibes and inspiration! 💫",
-        scores: { pixelPuff: 2, hypeHorn: 2 }
+        scores: { pixelPuff: 2, sleepyMoon: 2 }
       },
       {
         text: "Perfect documentation of everything!",
@@ -339,7 +372,7 @@ export const questions = [
       },
       {
         text: "Pure chaotic fun energy!!",
-        scores: { glitchGremlin: 2, sparkleChaser: 2 }
+        scores: { glitchGremlin: 2, coffeeCup: 2 }
       }
     ]
   }
