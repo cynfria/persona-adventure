@@ -6,8 +6,23 @@ import starImg from './assets/star.png';
 import snailImg from './assets/snail.png';
 import bugImg from './assets/bug.png';
 import rockImg from './assets/rock.png';
-import hornImg from './assets/horn.png';
 import blobImg from './assets/blob.png';
+import ballImg from './assets/ball.png';
+import coffeeImg from './assets/coffee.png';
+import moonImg from './assets/moon.png';
+import duckImg from './assets/duck.png';
+
+// Question images
+import questionOneImg from './assets/questions/one.png';
+import questionTwoImg from './assets/questions/two.png';
+import questionThreeImg from './assets/questions/three.png';
+import questionFourImg from './assets/questions/four.png';
+import questionFiveImg from './assets/questions/five.png';
+import questionSixImg from './assets/questions/six.png';
+import questionSevenImg from './assets/questions/seven.png';
+import questionEightImg from './assets/questions/eight.png';
+import questionNineImg from './assets/questions/nine.png';
+import questionTenImg from './assets/questions/ten.png';
 
 export const personas = {
   brickie: {
@@ -105,7 +120,7 @@ export const personas = {
     traits: ['energetic', 'texts in all caps', 'dances in grocery stores', 'knows everyone somehow', 'optimistic', 'triple books weekends', 'photobombs strangers'],
     color: '#FF6B6B',
     emoji: '🏐',
-    image: hornImg,
+    image: ballImg,
     mostCompatible: { id: 'sparkleChaser', reason: 'You both live for excitement and high energy moments' },
     leastCompatible: { id: 'safetySnail', reason: 'Your endless energy and enthusiasm overwhelm them' }
   },
@@ -127,7 +142,7 @@ export const personas = {
     traits: ['caffeinated', 'morning person', 'always has new ideas', 'talks really fast', 'productive', 'wakes up at 5am', 'needs constant stimulation'],
     color: '#8B4513',
     emoji: '☕',
-    image: blockImg,
+    image: coffeeImg,
     mostCompatible: { id: 'sparkleChaser', reason: 'You both have endless energy and enthusiasm' },
     leastCompatible: { id: 'mossyRock', reason: 'Your constant energy exhausts their slow, steady pace' }
   },
@@ -138,7 +153,7 @@ export const personas = {
     traits: ['nocturnal', 'creative at 2am', 'overthinks everything', 'loves stargazing', 'moody', 'writes poetry', 'sleeps til noon'],
     color: '#C8A2C8',
     emoji: '🌙',
-    image: pixelImg,
+    image: moonImg,
     mostCompatible: { id: 'pixelPuff', reason: 'You both appreciate beauty and deep feelings' },
     leastCompatible: { id: 'coffeeCup', reason: 'Their morning energy clashes with your night owl schedule' }
   },
@@ -149,7 +164,7 @@ export const personas = {
     traits: ['patient', 'good listener', 'asks helpful questions', 'non-judgmental', 'supportive', 'always available', 'debugging expert'],
     color: '#FFD700',
     emoji: '🦆',
-    image: stickyImg,
+    image: duckImg,
     mostCompatible: { id: 'safetySnail', reason: 'You both value careful, thoughtful approaches' },
     leastCompatible: { id: 'glitchGremlin', reason: 'Their chaos stresses you out' }
   }
@@ -159,6 +174,7 @@ export const questions = [
   {
     id: 1,
     scenario: "You wake up in a funky digital world! What catches your eye first?",
+    image: questionOneImg,
     choices: [
       {
         text: "Ooh, everything is so neat and organized!",
@@ -181,6 +197,7 @@ export const questions = [
   {
     id: 2,
     scenario: "A cute lil creature bounces up and offers you a quest!",
+    image: questionTwoImg,
     choices: [
       {
         text: "YES YES YES LET'S GOOO!! 🏃‍♀️",
@@ -203,6 +220,7 @@ export const questions = [
   {
     id: 3,
     scenario: "You find a mysterious gadget! What's your move?",
+    image: questionThreeImg,
     choices: [
       {
         text: "Time to build something cool and organized!",
@@ -225,6 +243,7 @@ export const questions = [
   {
     id: 4,
     scenario: "Your squad needs a leader! What do you do?",
+    image: questionFourImg,
     choices: [
       {
         text: "GET HYPED!! *rallies everyone*",
@@ -247,6 +266,7 @@ export const questions = [
   {
     id: 5,
     scenario: "Locked door with a puzzle! How do you crack it?",
+    image: questionFiveImg,
     choices: [
       {
         text: "Build a solution piece by piece!",
@@ -269,6 +289,7 @@ export const questions = [
   {
     id: 6,
     scenario: "CHAOS ALERT!! Everything's going wrong! What now?",
+    image: questionSixImg,
     choices: [
       {
         text: "TIME TO TAKE CHARGE!! 📢",
@@ -291,6 +312,7 @@ export const questions = [
   {
     id: 7,
     scenario: "Treasure chest!! What do you hope is inside?",
+    image: questionSevenImg,
     choices: [
       {
         text: "SPARKLES AND SHINY THINGS!! ✨",
@@ -313,6 +335,7 @@ export const questions = [
   {
     id: 8,
     scenario: "Victory!! Time to celebrate! What's your vibe?",
+    image: questionEightImg,
     choices: [
       {
         text: "PARTY TIME!! *blasts music*",
@@ -335,6 +358,7 @@ export const questions = [
   {
     id: 9,
     scenario: "Someone needs your help on a project!",
+    image: questionNineImg,
     choices: [
       {
         text: "Let me build you a solid plan!",
@@ -357,6 +381,7 @@ export const questions = [
   {
     id: 10,
     scenario: "The end! What's your legacy?",
+    image: questionTenImg,
     choices: [
       {
         text: "A solid foundation for future friends!",
