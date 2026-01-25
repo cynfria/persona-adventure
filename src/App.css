@@ -172,6 +172,7 @@ body {
   transition: all 0.2s;
   font-family: 'OffBit', 'Courier New', monospace;
   border-radius: 12px;
+  margin-bottom: 60px;
 }
 
 .start-button:hover {
