@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import borderImg from '../assets/border.svg';
 import { personas } from '../gameData';
+import personaShadow from '../assets/questions/persona-shadow.png';
 
 function StartScreen({ onStart }) {
   const randomPersona = useMemo(() => {
@@ -15,7 +16,8 @@ function StartScreen({ onStart }) {
       <div className="start-content">
         <h1 className="title">which lil tech guy are you</h1>
         <div className="start-persona-image">
-          <img src={randomPersona.image} alt={randomPersona.name} />
+          <img src={personaShadow} alt="" className="persona-shadow" />
+          <img src={randomPersona.image} alt={randomPersona.name} className="persona-img" />
         </div>
         <button className="start-button" onClick={onStart}>
           start

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { personas } from '../gameData';
 import borderImg from '../assets/border.svg';
+import personaShadow from '../assets/questions/persona-shadow.png';
 
 function Results({ persona, onRestart }) {
   const mostCompatible = personas[persona.mostCompatible.id];
@@ -47,7 +48,8 @@ function Results({ persona, onRestart }) {
             <h2 className="persona-name">{persona.name}</h2>
 
           <div className="persona-emoji-large">
-            <img src={persona.image} alt={persona.name} />
+            <img src={personaShadow} alt="" className="persona-shadow" />
+            <img src={persona.image} alt={persona.name} className="persona-img" />
           </div>
 
           <div className="traits-badges">

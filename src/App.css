@@ -104,13 +104,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.start-persona-image img {
+.start-persona-image .persona-shadow {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.start-persona-image .persona-img {
   width: 250px;
   height: 250px;
   object-fit: contain;
   animation: bounce 2s ease-in-out infinite;
+  z-index: 1;
+  position: relative;
 }
 
 @keyframes bounce {
@@ -270,11 +282,11 @@ body {
   pointer-events: auto;
 }
 
-/* Question 1: Set max size for image 7 at 1000px viewport and move down 32px */
+/* Question 1: Set max size for image 7 at 1000px viewport and move down 60px */
 [data-question="1"] .animated-scene g:nth-of-type(7) image {
   max-width: 645px;
   max-height: 484px;
-  transform: translateY(32px);
+  transform: translateY(60px);
 }
 
 .choices {
@@ -366,12 +378,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.persona-emoji-large img {
+.persona-emoji-large .persona-shadow {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.persona-emoji-large .persona-img {
   width: 220px;
   height: 220px;
   object-fit: contain;
+  z-index: 1;
+  position: relative;
 }
 
 .traits-badges {
@@ -704,9 +728,14 @@ body {
     padding: 16px 40px;
   }
 
-  .start-persona-image img {
+  .start-persona-image .persona-img {
     width: 200px;
     height: 200px;
+  }
+
+  .start-persona-image .persona-shadow {
+    width: 230px;
+    height: 230px;
   }
 
   .start-content {
@@ -762,9 +791,14 @@ body {
     padding: 25px 15px;
   }
 
-  .persona-emoji-large img {
+  .persona-emoji-large .persona-img {
     width: 180px;
     height: 180px;
+  }
+
+  .persona-emoji-large .persona-shadow {
+    width: 210px;
+    height: 210px;
   }
 
   .compatibility-grid {
@@ -866,9 +900,14 @@ body {
     padding: 14px 35px;
   }
 
-  .start-persona-image img {
+  .start-persona-image .persona-img {
     width: 160px;
     height: 160px;
+  }
+
+  .start-persona-image .persona-shadow {
+    width: 190px;
+    height: 190px;
   }
 
   .start-content {
@@ -917,9 +956,14 @@ body {
     font-size: 1.05rem;
   }
 
-  .persona-emoji-large img {
+  .persona-emoji-large .persona-img {
     width: 150px;
     height: 150px;
+  }
+
+  .persona-emoji-large .persona-shadow {
+    width: 180px;
+    height: 180px;
   }
 
   .compat-emoji-small {
@@ -963,10 +1007,10 @@ body {
     padding: 0 45px;
   }
 
-  /* Question 1: Make image 7 15% smaller and move down 12px from global position */
+  /* Question 1: Make image 7 15% smaller and move up 40px from global position */
   [data-question="1"] .animated-scene g:nth-of-type(7) image {
     width: 549px !important;
     height: 411px !important;
-    transform: translateY(12px) !important;
+    transform: translateY(-40px) !important;
   }
 }
