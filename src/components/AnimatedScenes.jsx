@@ -130,8 +130,9 @@ const ParallaxScene = ({ images, layerConfig }) => {
     const handleOrientation = (event) => {
       const gamma = event.gamma || 0;
       const beta = event.beta || 0;
-      const x = Math.max(-50, Math.min(50, gamma * 0.8));
-      const y = Math.max(-50, Math.min(50, (beta - 90) * 0.8));
+      // Reduced sensitivity to 0.3 to keep positioning closer to browser inspector view
+      const x = Math.max(-50, Math.min(50, gamma * 0.3));
+      const y = Math.max(-50, Math.min(50, (beta - 90) * 0.3));
       targetPos.current = { x, y };
 
       if (!hasInteracted.current) {
