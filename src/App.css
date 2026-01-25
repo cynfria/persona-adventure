@@ -1204,13 +1204,13 @@ body {
   [data-question="3"] .animated-scene g:nth-of-type(2) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translate(0, -8px) !important;
+    transform: translate(32px, -8px) !important;
   }
 
   [data-question="3"] .animated-scene g:nth-of-type(3) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translate(0, -8px) !important;
+    transform: translate(32px, -8px) !important;
   }
 
   /* Question 4: Make characters (2-5) 30% smaller and move right 82px up 12px */
