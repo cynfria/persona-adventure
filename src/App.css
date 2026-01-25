@@ -961,14 +961,14 @@ body {
 
   /* Question 3: Center device and shadow (2 and 3) between question and responses */
   [data-question="3"] .animated-scene g:nth-of-type(2) image {
-    width: 70% !important;
-    height: 70% !important;
+    width: 80% !important;
+    height: 80% !important;
     transform: translate(20px, 8px) !important;
   }
 
   [data-question="3"] .animated-scene g:nth-of-type(3) image {
-    width: 70% !important;
-    height: 70% !important;
+    width: 80% !important;
+    height: 80% !important;
     transform: translate(20px, 8px) !important;
   }
 
@@ -1202,14 +1202,14 @@ body {
 
   /* Question 3: Center device and shadow (2 and 3) between question and responses */
   [data-question="3"] .animated-scene g:nth-of-type(2) image {
-    width: 80% !important;
-    height: 80% !important;
+    width: 70% !important;
+    height: 70% !important;
     transform: translate(0, -8px) !important;
   }
 
   [data-question="3"] .animated-scene g:nth-of-type(3) image {
-    width: 80% !important;
-    height: 80% !important;
+    width: 70% !important;
+    height: 70% !important;
     transform: translate(0, -8px) !important;
   }
 
