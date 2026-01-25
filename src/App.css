@@ -305,11 +305,11 @@ body {
   pointer-events: auto;
 }
 
-/* Question 1: Set max size for image 7 at 1000px viewport and move down 60px */
+/* Question 1: Set max size for image 7 at 1000px viewport and move right 24px down 36px */
 [data-question="1"] .animated-scene g:nth-of-type(7) image {
   max-width: 645px;
   max-height: 484px;
-  transform: translateY(60px);
+  transform: translate(24px, 36px);
 }
 
 /* Question 2: Set max sizes for images 6, 7, and 8 on large breakpoint */
@@ -950,25 +950,25 @@ body {
   [data-question="2"] .animated-scene g:nth-of-type(6) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translate(150px, 90px) !important;
+    transform: translate(150px, 66px) !important;
   }
 
   [data-question="2"] .animated-scene g:nth-of-type(8) image {
     width: 65% !important;
     height: 65% !important;
-    transform: translate(60px, 20px) !important;
+    transform: translate(60px, -4px) !important;
   }
 
   /* Question 3: Center device and shadow (2 and 3) between question and responses */
   [data-question="3"] .animated-scene g:nth-of-type(2) image {
-    width: 80% !important;
-    height: 80% !important;
+    width: 70% !important;
+    height: 70% !important;
     transform: translate(20px, 8px) !important;
   }
 
   [data-question="3"] .animated-scene g:nth-of-type(3) image {
-    width: 80% !important;
-    height: 80% !important;
+    width: 70% !important;
+    height: 70% !important;
     transform: translate(20px, 8px) !important;
   }
 
@@ -1213,54 +1213,54 @@ body {
     transform: translate(0, -8px) !important;
   }
 
-  /* Question 4: Make characters (2-5) 30% smaller and move right 82px */
+  /* Question 4: Make characters (2-5) 30% smaller and move right 82px up 12px */
   [data-question="4"] .animated-scene g:nth-of-type(2) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translateX(82px) !important;
+    transform: translate(82px, -12px) !important;
   }
 
   [data-question="4"] .animated-scene g:nth-of-type(3) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translateX(82px) !important;
+    transform: translate(82px, -12px) !important;
   }
 
   [data-question="4"] .animated-scene g:nth-of-type(4) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translateX(82px) !important;
+    transform: translate(82px, -12px) !important;
   }
 
   [data-question="4"] .animated-scene g:nth-of-type(5) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translateX(82px) !important;
+    transform: translate(82px, -12px) !important;
   }
 
-  /* Question 5: Door (2) and plants (3-5) move down 24px and left 8px, flowers (6-7) stay same */
+  /* Question 5: Door (2) and plants (3-5) move up 24px, flowers (6-7) stay same */
   [data-question="5"] .animated-scene g:nth-of-type(2) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(50px, 0px) !important;
+    transform: translate(50px, -24px) !important;
   }
 
   [data-question="5"] .animated-scene g:nth-of-type(3) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(54px, 0px) !important;
+    transform: translate(54px, -24px) !important;
   }
 
   [data-question="5"] .animated-scene g:nth-of-type(4) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(54px, 0px) !important;
+    transform: translate(54px, -24px) !important;
   }
 
   [data-question="5"] .animated-scene g:nth-of-type(5) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(54px, 0px) !important;
+    transform: translate(54px, -24px) !important;
   }
 
   [data-question="5"] .animated-scene g:nth-of-type(6) image {
@@ -1275,20 +1275,24 @@ body {
     transform: translate(70px, -24px) !important;
   }
 
-  /* Question 6: Make images 2 and 3 15% smaller and move up 20px left 40px */
+  /* Question 6: Make images 2 and 3 15% smaller and move up 44px left 40px, move image 5 up 24px */
   [data-question="6"] .animated-scene g:nth-of-type(2) image {
     width: 85% !important;
     height: 85% !important;
-    transform: translate(-40px, -20px) !important;
+    transform: translate(-40px, -44px) !important;
   }
 
   [data-question="6"] .animated-scene g:nth-of-type(3) image {
     width: 85% !important;
     height: 85% !important;
-    transform: translate(-40px, -20px) !important;
+    transform: translate(-40px, -44px) !important;
   }
 
-  /* Question 7: Make images 2-4 25% smaller and remain centered, move 5-9 up 12px */
+  [data-question="6"] .animated-scene g:nth-of-type(5) image {
+    transform: translateY(-24px) !important;
+  }
+
+  /* Question 7: Make images 2-4 25% smaller and remain centered, move 5-9 up 32px */
   [data-question="7"] .animated-scene g:nth-of-type(2) image {
     width: 75% !important;
     height: 75% !important;
@@ -1305,67 +1309,67 @@ body {
   }
 
   [data-question="7"] .animated-scene g:nth-of-type(5) image {
-    transform: translateY(-12px) !important;
+    transform: translateY(-32px) !important;
   }
 
   [data-question="7"] .animated-scene g:nth-of-type(6) image {
-    transform: translateY(-12px) !important;
+    transform: translateY(-32px) !important;
   }
 
   [data-question="7"] .animated-scene g:nth-of-type(7) image {
-    transform: translateY(-12px) !important;
+    transform: translateY(-32px) !important;
   }
 
   [data-question="7"] .animated-scene g:nth-of-type(8) image {
-    transform: translateY(-12px) !important;
+    transform: translateY(-32px) !important;
   }
 
   [data-question="7"] .animated-scene g:nth-of-type(9) image {
-    transform: translateY(-12px) !important;
+    transform: translateY(-32px) !important;
   }
 
-  /* Question 8: Make images 5-7 30% smaller and move right 70px down 36px */
+  /* Question 8: Make images 5-7 30% smaller and move right 70px down 12px */
   [data-question="8"] .animated-scene g:nth-of-type(5) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translate(70px, 36px) !important;
+    transform: translate(70px, 12px) !important;
   }
 
   [data-question="8"] .animated-scene g:nth-of-type(6) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translate(70px, 36px) !important;
+    transform: translate(70px, 12px) !important;
   }
 
   [data-question="8"] .animated-scene g:nth-of-type(7) image {
     width: 70% !important;
     height: 70% !important;
-    transform: translate(70px, 36px) !important;
+    transform: translate(70px, 12px) !important;
   }
 
-  /* Question 9: Shadow (2) positioned under robot, robot (3-5) 40% smaller and move right 70px up 10px, image 6 40% smaller and move right 164px */
+  /* Question 9: Shadow (2) positioned under robot, robot (3-5) 40% smaller and move right 70px up 30px, image 6 40% smaller and move right 164px */
   [data-question="9"] .animated-scene g:nth-of-type(2) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(150px, 38px) !important;
+    transform: translate(150px, 18px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(3) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(70px, -10px) !important;
+    transform: translate(70px, -30px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(4) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(70px, -10px) !important;
+    transform: translate(70px, -30px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(5) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(70px, -10px) !important;
+    transform: translate(70px, -30px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(6) image {
@@ -1374,17 +1378,17 @@ body {
     transform: translateX(164px) !important;
   }
 
-  /* Question 10: Make images 2-3 30% smaller and move up 12px right 16px, images 4-6 40% smaller */
+  /* Question 10: Make images 2-3 40% smaller and move up 28px right 16px, images 4-6 30% smaller */
   [data-question="10"] .animated-scene g:nth-of-type(2) image {
-    width: 70% !important;
-    height: 70% !important;
-    transform: translate(16px, -12px) !important;
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(16px, -28px) !important;
   }
 
   [data-question="10"] .animated-scene g:nth-of-type(3) image {
-    width: 70% !important;
-    height: 70% !important;
-    transform: translate(16px, -12px) !important;
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(16px, -28px) !important;
   }
 
   [data-question="10"] .animated-scene g:nth-of-type(4) image {
