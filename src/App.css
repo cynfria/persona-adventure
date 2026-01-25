@@ -289,6 +289,22 @@ body {
   transform: translateY(60px);
 }
 
+/* Question 2: Set max sizes for images 6, 7, and 8 on large breakpoint */
+[data-question="2"] .animated-scene g:nth-of-type(6) image {
+  max-width: 731px;
+  max-height: 548px;
+}
+
+[data-question="2"] .animated-scene g:nth-of-type(7) image {
+  max-width: 466px;
+  max-height: 349px;
+}
+
+[data-question="2"] .animated-scene g:nth-of-type(8) image {
+  max-width: 559px;
+  max-height: 419px;
+}
+
 .choices {
   display: flex;
   flex-direction: column;
@@ -867,6 +883,22 @@ body {
     width: 140px;
     height: 140px;
   }
+
+  /* Question 1: Move image 7 up 40px from base position */
+  [data-question="1"] .animated-scene g:nth-of-type(7) image {
+    transform: translateY(20px) !important;
+  }
+
+  /* Question 2: Make images 6 and 8 15% smaller */
+  [data-question="2"] .animated-scene g:nth-of-type(6) image {
+    width: 85% !important;
+    height: 85% !important;
+  }
+
+  [data-question="2"] .animated-scene g:nth-of-type(8) image {
+    width: 85% !important;
+    height: 85% !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1007,10 +1039,23 @@ body {
     padding: 0 45px;
   }
 
-  /* Question 1: Make image 7 15% smaller and move up 40px from global position */
+  /* Question 1: Make image 7 15% smaller and move up 120px from global position */
   [data-question="1"] .animated-scene g:nth-of-type(7) image {
     width: 549px !important;
     height: 411px !important;
+    transform: translateY(-120px) !important;
+  }
+
+  /* Question 2: Make images 6 and 8 15% smaller and move up 40px */
+  [data-question="2"] .animated-scene g:nth-of-type(6) image {
+    width: 85% !important;
+    height: 85% !important;
+    transform: translateY(-40px) !important;
+  }
+
+  [data-question="2"] .animated-scene g:nth-of-type(8) image {
+    width: 85% !important;
+    height: 85% !important;
     transform: translateY(-40px) !important;
   }
 }
