@@ -4,6 +4,7 @@ import StartScreen from './components/StartScreen';
 import Question from './components/Question';
 import Results from './components/Results';
 import { questions, personas } from './gameData';
+import { allQuestionImages, preloadImages } from './utils/preloadImages';
 
 function App() {
   const [gameState, setGameState] = useState('start'); // start, playing, results
@@ -25,6 +26,11 @@ function App() {
   });
   const [result, setResult] = useState(null);
   const [answerHistory, setAnswerHistory] = useState([]);
+
+  // Preload all question images on mount
+  useEffect(() => {
+    preloadImages(allQuestionImages);
+  }, []);
 
   // Browser history management
   useEffect(() => {
