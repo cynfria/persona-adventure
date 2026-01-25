@@ -1347,29 +1347,29 @@ body {
     transform: translate(70px, 12px) !important;
   }
 
-  /* Question 9: Shadow (2) positioned under robot, robot (3-5) 40% smaller and move right 70px up 30px, image 6 40% smaller and move right 164px */
+  /* Question 9: Shadow (2) positioned under robot, robot (3-5) 40% smaller and move right 58px up 30px, image 6 40% smaller and move right 164px */
   [data-question="9"] .animated-scene g:nth-of-type(2) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(150px, 18px) !important;
+    transform: translate(138px, 18px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(3) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(70px, -30px) !important;
+    transform: translate(58px, -30px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(4) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(70px, -30px) !important;
+    transform: translate(58px, -30px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(5) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(70px, -30px) !important;
+    transform: translate(58px, -30px) !important;
   }
 
   [data-question="9"] .animated-scene g:nth-of-type(6) image {
