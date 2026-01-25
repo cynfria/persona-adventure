@@ -305,11 +305,11 @@ body {
   pointer-events: auto;
 }
 
-/* Question 1: Set max size for image 7 at 1000px viewport and move right 24px up 4px */
+/* Question 1: Set max size for image 7 at 1000px viewport and move down 60px */
 [data-question="1"] .animated-scene g:nth-of-type(7) image {
   max-width: 645px;
   max-height: 484px;
-  transform: translate(24px, 4px);
+  transform: translateY(60px);
 }
 
 /* Question 2: Set max sizes for images 6, 7, and 8 on large breakpoint */
