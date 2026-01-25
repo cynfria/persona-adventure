@@ -1378,17 +1378,17 @@ body {
     transform: translateX(164px) !important;
   }
 
-  /* Question 10: Make images 2-3 40% smaller and move up 28px right 16px, images 4-6 30% smaller */
+  /* Question 10: Make images 2-3 40% smaller and move up 28px right 48px, images 4-6 30% smaller */
   [data-question="10"] .animated-scene g:nth-of-type(2) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(16px, -28px) !important;
+    transform: translate(48px, -28px) !important;
   }
 
   [data-question="10"] .animated-scene g:nth-of-type(3) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(16px, -28px) !important;
+    transform: translate(48px, -28px) !important;
   }
 
   [data-question="10"] .animated-scene g:nth-of-type(4) image {
