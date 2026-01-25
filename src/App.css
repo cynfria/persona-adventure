@@ -1180,24 +1180,24 @@ body {
     padding: 0 45px;
   }
 
-  /* Question 1: Make image 7 15% smaller and move right 40px and down 80px */
+  /* Question 1: Make image 7 15% smaller and move right 40px and down 48px */
   [data-question="1"] .animated-scene g:nth-of-type(7) image {
     width: 549px !important;
     height: 411px !important;
-    transform: translate(40px, 80px) !important;
+    transform: translate(40px, 48px) !important;
   }
 
   /* Question 2: Position shadow (6) under creature (8) */
   [data-question="2"] .animated-scene g:nth-of-type(6) image {
     width: 65% !important;
     height: 65% !important;
-    transform: translate(170px, 100px) !important;
+    transform: translate(170px, 76px) !important;
   }
 
   [data-question="2"] .animated-scene g:nth-of-type(8) image {
     width: 60% !important;
     height: 60% !important;
-    transform: translate(80px, 40px) !important;
+    transform: translate(80px, 16px) !important;
   }
 
   /* Question 3: Center device and shadow (2 and 3) between question and responses */
