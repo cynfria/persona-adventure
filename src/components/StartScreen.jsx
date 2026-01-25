@@ -1,23 +1,32 @@
-import { useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import borderImg from '../assets/border.svg';
 import { personas } from '../gameData';
 import personaShadow from '../assets/questions/persona-shadow.png';
 
 function StartScreen({ onStart }) {
-  const randomPersona = useMemo(() => {
-    const personaArray = Object.values(personas).filter(
+  const availablePersonas = useMemo(() => {
+    return Object.values(personas).filter(
       persona => persona.name !== 'coffee cup'
     );
-    return personaArray[Math.floor(Math.random() * personaArray.length)];
   }, []);
+
+  const [currentPersonaIndex, setCurrentPersonaIndex] = useState(() =>
+    Math.floor(Math.random() * availablePersonas.length)
+  );
+
+  const handlePersonaClick = () => {
+    setCurrentPersonaIndex((prev) => (prev + 1) % availablePersonas.length);
+  };
+
+  const currentPersona = availablePersonas[currentPersonaIndex];
 
   return (
     <div className="start-screen">
       <div className="start-content">
         <h1 className="title">which lil tech guy are you</h1>
-        <div className="start-persona-image">
+        <div className="start-persona-image" onClick={handlePersonaClick} style={{ cursor: 'pointer' }}>
           <img src={personaShadow} alt="" className="persona-shadow" />
-          <img src={randomPersona.image} alt={randomPersona.name} className="persona-img" />
+          <img src={currentPersona.image} alt={currentPersona.name} className="persona-img" />
         </div>
         <button className="start-button" onClick={onStart}>
           start
