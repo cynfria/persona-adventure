@@ -4,7 +4,9 @@ import { personas } from '../gameData';
 
 function StartScreen({ onStart }) {
   const randomPersona = useMemo(() => {
-    const personaArray = Object.values(personas);
+    const personaArray = Object.values(personas).filter(
+      persona => persona.name !== 'coffee cup'
+    );
     return personaArray[Math.floor(Math.random() * personaArray.length)];
   }, []);
 

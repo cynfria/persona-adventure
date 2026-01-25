@@ -1,28 +1,19 @@
-import blockImg from './assets/block.png';
-import pixelImg from './assets/pixel.png';
-import stickyImg from './assets/sticky.png';
-import wormImg from './assets/worm.png';
-import starImg from './assets/star.png';
-import snailImg from './assets/snail.png';
-import bugImg from './assets/bug.png';
-import rockImg from './assets/rock.png';
-import blobImg from './assets/blob.png';
-import ballImg from './assets/ball.png';
-import coffeeImg from './assets/coffee.png';
-import moonImg from './assets/moon.png';
-import duckImg from './assets/duck.png';
+import blockImg from './assets/personas/block.png';
+import pixelImg from './assets/personas/pixel.png';
+import stickyImg from './assets/personas/sticky.png';
+import wormImg from './assets/personas/worm.png';
+import starImg from './assets/personas/star.png';
+import snailImg from './assets/personas/snail.png';
+import bugImg from './assets/personas/bug.png';
+import rockImg from './assets/personas/rock.png';
+import blobImg from './assets/personas/blob.png';
+import ballImg from './assets/personas/ball.png';
+import coffeeImg from './assets/personas/coffee.png';
+import moonImg from './assets/personas/moon.png';
+import duckImg from './assets/personas/duck.png';
 
-// Question images
-import questionOneImg from './assets/questions/one.png';
-import questionTwoImg from './assets/questions/two.png';
-import questionThreeImg from './assets/questions/three.png';
-import questionFourImg from './assets/questions/four.png';
-import questionFiveImg from './assets/questions/five.png';
-import questionSixImg from './assets/questions/six.png';
-import questionSevenImg from './assets/questions/seven.png';
-import questionEightImg from './assets/questions/eight.png';
-import questionNineImg from './assets/questions/nine.png';
-import questionTenImg from './assets/questions/ten.png';
+// Animated scenes
+import { Scene1, Scene2, Scene3, Scene4, Scene5, Scene6, Scene7, Scene8, Scene9, Scene10 } from './components/AnimatedScenes';
 
 export const personas = {
   brickie: {
@@ -174,7 +165,7 @@ export const questions = [
   {
     id: 1,
     scenario: "You wake up in a funky digital world! What catches your eye first?",
-    image: questionOneImg,
+    scene: Scene1,
     choices: [
       {
         text: "Ooh, everything is so neat and organized!",
@@ -197,7 +188,7 @@ export const questions = [
   {
     id: 2,
     scenario: "A cute lil creature bounces up and offers you a quest!",
-    image: questionTwoImg,
+    scene: Scene2,
     choices: [
       {
         text: "YES YES YES LET'S GOOO!! 🏃‍♀️",
@@ -220,7 +211,7 @@ export const questions = [
   {
     id: 3,
     scenario: "You find a mysterious gadget! What's your move?",
-    image: questionThreeImg,
+    scene: Scene3,
     choices: [
       {
         text: "Time to build something cool and organized!",
@@ -243,7 +234,7 @@ export const questions = [
   {
     id: 4,
     scenario: "Your squad needs a leader! What do you do?",
-    image: questionFourImg,
+    scene: Scene4,
     choices: [
       {
         text: "GET HYPED!! *rallies everyone*",
@@ -266,7 +257,7 @@ export const questions = [
   {
     id: 5,
     scenario: "Locked door with a puzzle! How do you crack it?",
-    image: questionFiveImg,
+    scene: Scene5,
     choices: [
       {
         text: "Build a solution piece by piece!",
@@ -289,7 +280,7 @@ export const questions = [
   {
     id: 6,
     scenario: "CHAOS ALERT!! Everything's going wrong! What now?",
-    image: questionSixImg,
+    scene: Scene6,
     choices: [
       {
         text: "TIME TO TAKE CHARGE!! 📢",
@@ -312,7 +303,7 @@ export const questions = [
   {
     id: 7,
     scenario: "Treasure chest!! What do you hope is inside?",
-    image: questionSevenImg,
+    scene: Scene7,
     choices: [
       {
         text: "SPARKLES AND SHINY THINGS!! ✨",
@@ -335,7 +326,7 @@ export const questions = [
   {
     id: 8,
     scenario: "Victory!! Time to celebrate! What's your vibe?",
-    image: questionEightImg,
+    scene: Scene8,
     choices: [
       {
         text: "PARTY TIME!! *blasts music*",
@@ -358,7 +349,7 @@ export const questions = [
   {
     id: 9,
     scenario: "Someone needs your help on a project!",
-    image: questionNineImg,
+    scene: Scene9,
     choices: [
       {
         text: "Let me build you a solid plan!",
@@ -381,7 +372,7 @@ export const questions = [
   {
     id: 10,
     scenario: "The end! What's your legacy?",
-    image: questionTenImg,
+    scene: Scene10,
     choices: [
       {
         text: "A solid foundation for future friends!",

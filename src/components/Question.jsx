@@ -14,6 +14,11 @@ function Question({ question, questionNumber, totalQuestions, onAnswer }) {
 
   return (
     <div className="question-screen">
+      {question.scene && (
+        <div className="question-image">
+          <question.scene />
+        </div>
+      )}
       <div className="progress-bar">
         <div
           className="progress-fill"
@@ -22,11 +27,6 @@ function Question({ question, questionNumber, totalQuestions, onAnswer }) {
       </div>
       <div className="question-content">
         <h2 className="scenario">{question.scenario}</h2>
-        {question.image && (
-          <div className="question-image">
-            <img src={question.image} alt={`Question ${questionNumber}`} />
-          </div>
-        )}
         <div className="choices">
           {shuffledChoices.map((choice, index) => (
             <button
