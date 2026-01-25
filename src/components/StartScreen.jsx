@@ -22,6 +22,9 @@ function StartScreen({ onStart }) {
         <button className="start-button" onClick={onStart}>
           start
         </button>
+        <p className="credit">
+          made by <a href="https://x.com/yescynfria" target="_blank" rel="noopener noreferrer" className="credit-link">cynthia chen</a>
+        </p>
       </div>
     </div>
   );

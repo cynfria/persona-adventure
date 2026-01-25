@@ -62,13 +62,19 @@ function Results({ persona, onRestart }) {
             <div className="compatibility-column">
               <h3 className="compat-label">NOT YOUR VIBE</h3>
               <h4 className="compat-persona-name">{leastCompatible.name}</h4>
-              <img src={leastCompatible.image} alt={leastCompatible.name} className="compat-emoji-small" />
+              <div className="compat-emoji-container">
+                <img src={personaShadow} alt="" className="compat-shadow" />
+                <img src={leastCompatible.image} alt={leastCompatible.name} className="compat-emoji-small" />
+              </div>
             </div>
 
             <div className="compatibility-column">
               <h3 className="compat-label">YOUR BESTIE</h3>
               <h4 className="compat-persona-name">{mostCompatible.name}</h4>
-              <img src={mostCompatible.image} alt={mostCompatible.name} className="compat-emoji-small" />
+              <div className="compat-emoji-container">
+                <img src={personaShadow} alt="" className="compat-shadow" />
+                <img src={mostCompatible.image} alt={mostCompatible.name} className="compat-emoji-small" />
+              </div>
             </div>
           </div>
         </div>
