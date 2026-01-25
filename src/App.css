@@ -291,18 +291,18 @@ body {
 
 /* Question 2: Set max sizes for images 6, 7, and 8 on large breakpoint */
 [data-question="2"] .animated-scene g:nth-of-type(6) image {
-  max-width: 731px;
-  max-height: 548px;
+  max-width: 600px;
+  max-height: 450px;
 }
 
 [data-question="2"] .animated-scene g:nth-of-type(7) image {
-  max-width: 466px;
-  max-height: 349px;
+  max-width: 380px;
+  max-height: 285px;
 }
 
 [data-question="2"] .animated-scene g:nth-of-type(8) image {
-  max-width: 559px;
-  max-height: 419px;
+  max-width: 460px;
+  max-height: 345px;
 }
 
 .choices {
@@ -889,15 +889,30 @@ body {
     transform: translateY(20px) !important;
   }
 
-  /* Question 2: Make images 6 and 8 15% smaller */
+  /* Question 2: Make images 6 and 8 15% smaller and move up 40px */
   [data-question="2"] .animated-scene g:nth-of-type(6) image {
     width: 85% !important;
     height: 85% !important;
+    transform: translateY(-40px) !important;
   }
 
   [data-question="2"] .animated-scene g:nth-of-type(8) image {
     width: 85% !important;
     height: 85% !important;
+    transform: translateY(-40px) !important;
+  }
+
+  /* Question 3: Make images 2 and 3 20% smaller and move up 60px and left 20px */
+  [data-question="3"] .animated-scene g:nth-of-type(2) image {
+    width: 80% !important;
+    height: 80% !important;
+    transform: translate(-20px, -60px) !important;
+  }
+
+  [data-question="3"] .animated-scene g:nth-of-type(3) image {
+    width: 80% !important;
+    height: 80% !important;
+    transform: translate(-20px, -60px) !important;
   }
 }
 
@@ -1046,16 +1061,29 @@ body {
     transform: translateY(-120px) !important;
   }
 
-  /* Question 2: Make images 6 and 8 15% smaller and move up 40px */
+  /* Question 2: Make images 6 and 8 15% smaller and move up 100px */
   [data-question="2"] .animated-scene g:nth-of-type(6) image {
     width: 85% !important;
     height: 85% !important;
-    transform: translateY(-40px) !important;
+    transform: translateY(-100px) !important;
   }
 
   [data-question="2"] .animated-scene g:nth-of-type(8) image {
     width: 85% !important;
     height: 85% !important;
-    transform: translateY(-40px) !important;
+    transform: translateY(-100px) !important;
+  }
+
+  /* Question 3: Make images 2 and 3 20% smaller and move up 80px and left 10px */
+  [data-question="3"] .animated-scene g:nth-of-type(2) image {
+    width: 80% !important;
+    height: 80% !important;
+    transform: translate(-10px, -80px) !important;
+  }
+
+  [data-question="3"] .animated-scene g:nth-of-type(3) image {
+    width: 80% !important;
+    height: 80% !important;
+    transform: translate(-10px, -80px) !important;
   }
 }
