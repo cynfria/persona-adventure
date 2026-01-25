@@ -270,6 +270,13 @@ body {
   pointer-events: auto;
 }
 
+/* Question 1: Set max size for image 7 at 1000px viewport and move down 32px */
+[data-question="1"] .animated-scene g:nth-of-type(7) image {
+  max-width: 645px;
+  max-height: 484px;
+  transform: translateY(32px);
+}
+
 .choices {
   display: flex;
   flex-direction: column;
@@ -675,6 +682,11 @@ body {
     padding: 40px 15px 15px 15px;
   }
 
+  .question-screen {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   .title {
     font-size: 3rem;
   }
@@ -821,11 +833,6 @@ body {
     width: 140px;
     height: 140px;
   }
-
-  /* Question 1: Move image 7 up by 32px */
-  [data-question="1"] .animated-scene image:nth-child(7) {
-    transform: translateY(-32px);
-  }
 }
 
 @media (max-width: 480px) {
@@ -835,6 +842,11 @@ body {
 
   .App {
     padding: 30px 10px 10px 10px;
+  }
+
+  .question-screen {
+    height: 100vh;
+    overflow: hidden;
   }
 
   .title {
@@ -951,10 +963,10 @@ body {
     padding: 0 45px;
   }
 
-  /* Question 1: Make image 7 15% smaller and move up 16px */
-  [data-question="1"] .animated-scene image:nth-child(7) {
-    width: 85%;
-    height: 85%;
-    transform: translateY(-16px);
+  /* Question 1: Make image 7 15% smaller and move down 12px from global position */
+  [data-question="1"] .animated-scene g:nth-of-type(7) image {
+    width: 549px !important;
+    height: 411px !important;
+    transform: translateY(12px) !important;
   }
 }

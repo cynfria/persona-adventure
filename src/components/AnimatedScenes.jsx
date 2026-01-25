@@ -210,7 +210,7 @@ export const Scene1 = () => {
     { multiplier: 0.18 },
     { multiplier: 0.21 },
     { multiplier: 0.24 },
-    { multiplier: 0.35, x: "68", y: "75", width: "645", height: "484", preserveAspectRatio: "xMidYMid meet" },
+    { multiplier: 0.35, x: "68", y: "23", width: "645", height: "484", preserveAspectRatio: "xMidYMid meet" },
     { multiplier: 0.28 },
     { multiplier: 0.31 },
     { multiplier: 0.34 },
