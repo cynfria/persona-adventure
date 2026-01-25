@@ -305,6 +305,11 @@ body {
   max-height: 345px;
 }
 
+/* Question 9: Center image 6 horizontally on all breakpoints */
+[data-question="9"] .animated-scene g:nth-of-type(6) image {
+  transform: translateX(100px) !important;
+}
+
 .choices {
   display: flex;
   flex-direction: column;
@@ -727,10 +732,6 @@ body {
     overflow: hidden;
   }
 
-  body {
-    overflow: hidden;
-  }
-
   .title {
     font-size: 3rem;
   }
@@ -910,13 +911,13 @@ body {
   [data-question="3"] .animated-scene g:nth-of-type(2) image {
     width: 80% !important;
     height: 80% !important;
-    transform: translate(20px, 20px) !important;
+    transform: translate(60px, 20px) !important;
   }
 
   [data-question="3"] .animated-scene g:nth-of-type(3) image {
     width: 80% !important;
     height: 80% !important;
-    transform: translate(20px, 20px) !important;
+    transform: translate(60px, 20px) !important;
   }
 }
 
@@ -931,10 +932,6 @@ body {
 
   .question-screen {
     height: 100vh;
-    overflow: hidden;
-  }
-
-  body {
     overflow: hidden;
   }
 
@@ -1004,11 +1001,18 @@ body {
 
   .restart-button {
     font-size: 1.05rem;
-    padding: 14px 35px;
+    padding: 14px 15px;
+    width: calc(100% - 40px);
+    max-width: none;
   }
 
   .view-all-link {
     font-size: 1.05rem;
+  }
+
+  .results-screen {
+    padding-top: 0;
+    padding-bottom: 40px;
   }
 
   .persona-emoji-large .persona-img {
@@ -1086,12 +1090,204 @@ body {
   [data-question="3"] .animated-scene g:nth-of-type(2) image {
     width: 80% !important;
     height: 80% !important;
-    transform: translate(40px, 40px) !important;
+    transform: translate(0, -8px) !important;
   }
 
   [data-question="3"] .animated-scene g:nth-of-type(3) image {
     width: 80% !important;
     height: 80% !important;
-    transform: translate(40px, 40px) !important;
+    transform: translate(0, -8px) !important;
+  }
+
+  /* Question 4: Make characters (2-5) 30% smaller and move right 82px */
+  [data-question="4"] .animated-scene g:nth-of-type(2) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translateX(82px) !important;
+  }
+
+  [data-question="4"] .animated-scene g:nth-of-type(3) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translateX(82px) !important;
+  }
+
+  [data-question="4"] .animated-scene g:nth-of-type(4) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translateX(82px) !important;
+  }
+
+  [data-question="4"] .animated-scene g:nth-of-type(5) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translateX(82px) !important;
+  }
+
+  /* Question 5: Door (2) and plants (3-5) move down 24px and left 8px, flowers (6-7) stay same */
+  [data-question="5"] .animated-scene g:nth-of-type(2) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(50px, 0px) !important;
+  }
+
+  [data-question="5"] .animated-scene g:nth-of-type(3) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(54px, 0px) !important;
+  }
+
+  [data-question="5"] .animated-scene g:nth-of-type(4) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(54px, 0px) !important;
+  }
+
+  [data-question="5"] .animated-scene g:nth-of-type(5) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(54px, 0px) !important;
+  }
+
+  [data-question="5"] .animated-scene g:nth-of-type(6) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(70px, -24px) !important;
+  }
+
+  [data-question="5"] .animated-scene g:nth-of-type(7) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(70px, -24px) !important;
+  }
+
+  /* Question 6: Make images 2 and 3 15% smaller and move up 20px left 40px */
+  [data-question="6"] .animated-scene g:nth-of-type(2) image {
+    width: 85% !important;
+    height: 85% !important;
+    transform: translate(-40px, -20px) !important;
+  }
+
+  [data-question="6"] .animated-scene g:nth-of-type(3) image {
+    width: 85% !important;
+    height: 85% !important;
+    transform: translate(-40px, -20px) !important;
+  }
+
+  /* Question 7: Make images 2-4 25% smaller and remain centered, move 5-9 up 12px */
+  [data-question="7"] .animated-scene g:nth-of-type(2) image {
+    width: 75% !important;
+    height: 75% !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(3) image {
+    width: 75% !important;
+    height: 75% !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(4) image {
+    width: 75% !important;
+    height: 75% !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(5) image {
+    transform: translateY(-12px) !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(6) image {
+    transform: translateY(-12px) !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(7) image {
+    transform: translateY(-12px) !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(8) image {
+    transform: translateY(-12px) !important;
+  }
+
+  [data-question="7"] .animated-scene g:nth-of-type(9) image {
+    transform: translateY(-12px) !important;
+  }
+
+  /* Question 8: Make images 5-7 30% smaller and move right 70px down 36px */
+  [data-question="8"] .animated-scene g:nth-of-type(5) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(70px, 36px) !important;
+  }
+
+  [data-question="8"] .animated-scene g:nth-of-type(6) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(70px, 36px) !important;
+  }
+
+  [data-question="8"] .animated-scene g:nth-of-type(7) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(70px, 36px) !important;
+  }
+
+  /* Question 9: Shadow (2) positioned under robot, robot (3-5) 40% smaller and move right 70px up 10px, image 6 40% smaller and move right 164px */
+  [data-question="9"] .animated-scene g:nth-of-type(2) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(150px, 38px) !important;
+  }
+
+  [data-question="9"] .animated-scene g:nth-of-type(3) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(70px, -10px) !important;
+  }
+
+  [data-question="9"] .animated-scene g:nth-of-type(4) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(70px, -10px) !important;
+  }
+
+  [data-question="9"] .animated-scene g:nth-of-type(5) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translate(70px, -10px) !important;
+  }
+
+  [data-question="9"] .animated-scene g:nth-of-type(6) image {
+    width: 60% !important;
+    height: 60% !important;
+    transform: translateX(164px) !important;
+  }
+
+  /* Question 10: Make images 2-3 30% smaller and move up 12px right 16px, images 4-6 40% smaller */
+  [data-question="10"] .animated-scene g:nth-of-type(2) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(16px, -12px) !important;
+  }
+
+  [data-question="10"] .animated-scene g:nth-of-type(3) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(16px, -12px) !important;
+  }
+
+  [data-question="10"] .animated-scene g:nth-of-type(4) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(100px, 20px) !important;
+  }
+
+  [data-question="10"] .animated-scene g:nth-of-type(5) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(100px, 20px) !important;
+  }
+
+  [data-question="10"] .animated-scene g:nth-of-type(6) image {
+    width: 70% !important;
+    height: 70% !important;
+    transform: translate(100px, 20px) !important;
   }
 }
