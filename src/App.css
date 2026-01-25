@@ -821,6 +821,11 @@ body {
     width: 140px;
     height: 140px;
   }
+
+  /* Question 1: Move image 7 up by 32px */
+  [data-question="1"] .animated-scene image:nth-child(7) {
+    transform: translateY(-32px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -944,5 +949,12 @@ body {
   .all-personas-header {
     gap: 12px;
     padding: 0 45px;
+  }
+
+  /* Question 1: Make image 7 15% smaller and move up 16px */
+  [data-question="1"] .animated-scene image:nth-child(7) {
+    width: 85%;
+    height: 85%;
+    transform: translateY(-16px);
   }
 }

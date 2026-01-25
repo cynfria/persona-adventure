@@ -13,7 +13,7 @@ function Question({ question, questionNumber, totalQuestions, onAnswer }) {
   }, [question.id]);
 
   return (
-    <div className="question-screen">
+    <div className="question-screen" data-question={questionNumber}>
       {question.scene && (
         <div className="question-image">
           <question.scene />
