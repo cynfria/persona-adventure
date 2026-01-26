@@ -345,7 +345,7 @@ body {
 .choice-button {
   background: rgba(245, 245, 245, 0.98);
   border: none;
-  padding: 16px 20px;
+  padding: 16px 20px 14px 20px;
   font-size: 1.35rem;
   cursor: pointer;
   transition: all 0.2s;
@@ -738,7 +738,7 @@ body {
 
   .choice-button {
     font-size: 1.05rem;
-    padding: 16px 20px 12px 20px;
+    padding: 16px 20px 14px 20px;
   }
 
   .trait-badge {
@@ -819,7 +819,7 @@ body {
 
   .choice-button {
     font-size: 1.2rem;
-    padding: 14px 18px;
+    padding: 14px 18px 12px 18px;
   }
 
   .question-content {
@@ -1085,7 +1085,7 @@ body {
 
   .choice-button {
     font-size: 1.05rem;
-    padding: 12px 16px;
+    padding: 12px 16px 10px 16px;
     border-radius: 10px;
   }
 
