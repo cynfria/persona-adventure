@@ -5,6 +5,7 @@ import Question from './components/Question';
 import Results from './components/Results';
 import { questions, personas } from './gameData';
 import { allQuestionImages, preloadImages } from './utils/preloadImages';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [gameState, setGameState] = useState('start'); // start, playing, results
@@ -207,6 +208,7 @@ function App() {
       {gameState === 'results' && (
         <Results persona={result} onRestart={restartGame} />
       )}
+      <Analytics />
     </div>
   );
 }
