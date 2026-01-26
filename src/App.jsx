@@ -6,6 +6,7 @@ import Results from './components/Results';
 import { questions, personas } from './gameData';
 import { allQuestionImages, preloadImages } from './utils/preloadImages';
 import { Analytics } from '@vercel/analytics/react';
+import { track } from '@vercel/analytics';
 
 function App() {
   const [gameState, setGameState] = useState('start'); // start, playing, results
@@ -154,6 +155,12 @@ function App() {
       const finalResult = personas[winningPersona];
       setResult(finalResult);
       setGameState('results');
+
+      // Track which persona the user got
+      track('persona_result', {
+        persona: finalResult.name,
+        personaId: winningPersona
+      });
 
       window.history.pushState({
         gameState: 'results',
