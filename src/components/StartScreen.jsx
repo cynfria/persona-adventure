@@ -23,7 +23,7 @@ function StartScreen({ onStart }) {
   return (
     <div className="start-screen">
       <div className="start-content">
-        <h1 className="title">which lil tech guy are you</h1>
+        <h1 className="title">which lil guy are you</h1>
         <div className="start-persona-image" onClick={handlePersonaClick} style={{ cursor: 'pointer' }}>
           <img src={personaShadow} alt="" className="persona-shadow" />
           <img src={currentPersona.image} alt={currentPersona.name} className="persona-img" />
