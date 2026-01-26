@@ -16,7 +16,7 @@ function Results({ persona, onRestart }) {
             <button className="back-button" onClick={() => setViewMode('result')}>
               <span className="back-arrow-text">←</span>
             </button>
-            <h3 className="all-personas-title">Meet All The Friends!</h3>
+            <h3 className="all-personas-title">Meet All The Lil Guys!</h3>
           </div>
           <div className="personas-grid">
             {Object.values(personas).map((p) => (
@@ -87,7 +87,7 @@ function Results({ persona, onRestart }) {
           className="view-all-link"
           onClick={() => setViewMode('all-personas')}
         >
-          View all personas
+          View all lil guys
         </button>
       </div>
     </div>
